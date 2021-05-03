@@ -7,8 +7,8 @@ import {setUsername, setID, getID, Userlogin,setUsertype} from "./components/Cur
 
 // TODO - update this to be your url
 //const BASE_URL = "https://digiceipttest.herokuapp.com";
- const BASE_URL = "http://localhost:8000";
-const Font_URL = "http://localhost:3000";
+ const BASE_URL = "https://animal-shape-project.herokuapp.com";
+const Font_URL = "https://animal-shape-front.herokuapp.com";
 
 
 export function getUsers() {
