@@ -157,10 +157,10 @@ export default function HoverRating() {
     return (
         <div className={classes.root}>
 
-            <div className="pics6">
+            <div className={"pics6"}>
                 <h1>Survey</h1>
                 <div id="status3_pics">
-                    <ul className="pics6_status3">
+                    <ul className={"pics6_status3"}>
                         <li>
                             <div><b>DOG 1</b></div>
                             <div>Front profile</div>

@@ -207,27 +207,30 @@ h5 {
     border: #d3d3d3 solid 1px;
     color: #808080;
 }
-.pics5 .pics6_status1  .status1-pic{
+.pics6 .pics6_status1  .status1-pic{
     width: 100%;
     height: auto;
 }
-.pics5 .pics6_status2,.pics5 .pics6_status3,.pics5 .pics6_status4{
+.pics6 .pics6_status2,.pics6 .pics6_status3,.pics6 .pics6_status4{
     display: flex;
     display: -webkit-flex;
 }
-.pics5 .pics6_status2 li{
+.pics6 .pics6_status2 li{
     width: 50%;
     height: 100%;
     text-align: center;
 }
-.pics5 .pics6_status2 li .status2-pic,.pics5 .pics6_status3 li .status3-pic,.pics5 .pics6_status4 li .status4-pic{
+.pics6 .pics6_status2 li .status2-pic,.pics6 .pics6_status3 li .status3-pic,.pics6 .pics6_status4 li .status4-pic{
     width: 100%;
     height: 100%;
 }
-.pics5 .pics6_status3 li{
+.pics6 .pics6_status3 li{
     width: 33.333%;
     height: 100%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    text-align: center;
+}
+.pics6 .pics6_status4 li{
+    width: 25%;
+    height: 100%;
     text-align: center;
 }
