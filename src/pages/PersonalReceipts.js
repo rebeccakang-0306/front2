@@ -164,7 +164,7 @@ export default function HoverRating() {
                         <li>
                             <div><b>DOG 1</b></div>
                             <div>Front profile</div>
-                            <Image id="1" className="status3-pic" height="400" width="400
+                            <Image id="1" className="status3-pic" height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog11}/>
