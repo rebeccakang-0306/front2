@@ -1,11 +1,8 @@
 .NewNav{
     display: flex;
-    text-indent: 10px;
-    margin: auto;
     padding: 2rem;
     color: black;
     background-color: white;
-    margin-bottom: 0px ;
 
 }
 
