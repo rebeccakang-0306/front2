@@ -69,27 +69,27 @@ export class ReceiptTable extends React.Component {
 
                         {surveys.map(survey => {
                             return <Tr active key={survey._id}>
-                                <td>{survey.username}</td>
-                                <td>{survey.usertype}</td>
-                                <td>{survey.photo1f}</td>
-                                <td>{survey.photo1s}</td>
-                                <td>{survey.photo2f}</td>
-                                <td>{survey.photo2s}</td>
-                                <td>{survey.photo3f}</td>
-                                <td>{survey.photo3s}</td>
-                                <td>{survey.photo4f}</td>
-                                <td>{survey.photo4s}</td>
-                                <td>{survey.photo5f}</td>
-                                <td>{survey.photo5s}</td>
-                                <td>{survey.photo6f}</td>
-                                <td>{survey.photo6s}</td>
-                                <td>{survey.photo7f}</td>
-                                <td>{survey.photo7s}</td>
-                                <td>{survey.photo8f}</td>
-                                <td>{survey.photo8s}</td>
-                                <td>{survey.photo9f}</td>
-                                <td>{survey.photo9s}</td>
-                                <td><Receipt key={survey._id} {...survey} /> </td>
+                                <td className={"surveyData"}>{survey.username}</td>
+                                <td className={"surveyData"}>{survey.usertype}</td>
+                                <td className={"surveyData"}>{survey.photo1f}</td>
+                                <td className={"surveyData"}>{survey.photo1s}</td>
+                                <td className={"surveyData"}>{survey.photo2f}</td>
+                                <td className={"surveyData"}>{survey.photo2s}</td>
+                                <td className={"surveyData"}>{survey.photo3f}</td>
+                                <td className={"surveyData"}>{survey.photo3s}</td>
+                                <td className={"surveyData"}>{survey.photo4f}</td>
+                                <td className={"surveyData"}>{survey.photo4s}</td>
+                                <td className={"surveyData"}>{survey.photo5f}</td>
+                                <td className={"surveyData"}>{survey.photo5s}</td>
+                                <td className={"surveyData"}>{survey.photo6f}</td>
+                                <td className={"surveyData"}>{survey.photo6s}</td>
+                                <td className={"surveyData"}>{survey.photo7f}</td>
+                                <td className={"surveyData"}>{survey.photo7s}</td>
+                                <td className={"surveyData"}>{survey.photo8f}</td>
+                                <td className={"surveyData"}>{survey.photo8s}</td>
+                                <td className={"surveyData"}>{survey.photo9f}</td>
+                                <td className={"surveyData"}>{survey.photo9s}</td>
+                                <td className={"surveyData"}><Receipt key={survey._id} {...survey} /> </td>
                             </Tr>
                         })}
 
