@@ -164,7 +164,7 @@ export default function HoverRating() {
                         <li>
                             <div><b>DOG 1</b></div>
                             <div>Front profile</div>
-                            <Image id="1" className="status3-pic" height="400" width="400"
+                            <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog11}/>
@@ -182,7 +182,7 @@ export default function HoverRating() {
                             />
                                 {value !== null && <Box id= 'box1' ml={2}>{labels[hover !== -1 ? hover : value]}</Box>}
                             <div>Side profile</div>
-                            <Image id="1" className="status3-pic" height="400" width="400"
+                            <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog1}/>
@@ -206,7 +206,7 @@ export default function HoverRating() {
                         <li>
                             <div><b>DOG 2</b></div>
                             <div>Front profile</div>
-                            <img id="2" className="status3-pic" height="400" width="400"
+                            <img id="2" className="status3-pic" //height="400" width="400"
                                  //src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1541213992,76400213&fm=26&gp=0.jpg"/>
                                  src = {dog21}/>
                             <div>How much you like the dog?</div>
@@ -227,7 +227,7 @@ export default function HoverRating() {
 
 
                             <div>Side profile</div>
-                            <Image id="1" className="status3-pic" height="400" width="400"
+                            <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog2}/>
@@ -249,7 +249,7 @@ export default function HoverRating() {
                         <li>
                             <div><b>DOG 3</b></div>
                             <div>Front profile</div>
-                            <img id="3" className="status3-pic" height="400" width="400"
+                            <img id="3" className="status3-pic" //height="400" width="400"
                                  //src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1867263544,2857916448&fm=26&gp=0.jpg"/>
                                  src = {dog31}/>
                             <div>How much you like the dog?</div>
@@ -270,7 +270,7 @@ export default function HoverRating() {
 
 
                             <div>Side profile</div>
-                            <Image id="1" className="status3-pic" height="400" width="400"
+                            <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog3}/>
@@ -302,7 +302,7 @@ export default function HoverRating() {
                         <li>
                             <div><b>DOG 4</b></div>
                             <div>Front profile</div>
-                            <img id="4" className="status3-pic" height="400" width="400"
+                            <img id="4" className="status3-pic" //height="400" width="400"
                                  //src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2219225502,1868692565&fm=26&gp=0.jpg"/>
                                  src = {dog41}/>
                             <div>How much you like the dog?</div>
@@ -320,7 +320,7 @@ export default function HoverRating() {
                             {value3 !== null && <Box id= 'box1' ml={2}>{labels[hover3 !== -1 ? hover3 : value3]}</Box>}
 
                             <div>Side profile</div>
-                            <Image id="1" className="status3-pic" height="400" width="400"
+                            <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog4}/>
@@ -344,7 +344,7 @@ export default function HoverRating() {
                         <li>
                             <div><b>DOG 5</b></div>
                             <div>Front profile</div>
-                            <img id="5" className="status3-pic" height="400" width="400"
+                            <img id="5" className="status3-pic" //height="400" width="400"
                                  //src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=979862297,3441058921&fm=26&gp=0.jpg"/>
                             src = {dog5}/>
                             <div>How much you like the dog?</div>
@@ -364,7 +364,7 @@ export default function HoverRating() {
                             {value4 !== null && <Box ml={2}>{labels[hover4 !== -1 ? hover4 : value4]}</Box>}
 
                             <div>Side profile</div>
-                            <Image id="1" className="status3-pic" height="400" width="400"
+                            <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog51}/>
@@ -390,7 +390,7 @@ export default function HoverRating() {
                             <div><b>DOG 6</b></div>
                             <div>Front profile</div>
 
-                            <img id="6" className="status3-pic" height="400" width="400"
+                            <img id="6" className="status3-pic" //height="400" width="400"
                                  //src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3477240067,1549523397&fm=26&gp=0.jpg"/>
                                  src = {dog61}/>
                             <div>How much you like the dog?</div>
@@ -410,7 +410,7 @@ export default function HoverRating() {
                             {value5 !== null && <Box ml={2}>{labels[hover5 !== -1 ? hover5 : value5]}</Box>}
 
                             <div>Side profile</div>
-                            <Image id="1" className="status3-pic" height="400" width="400"
+                            <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog6}/>
@@ -441,7 +441,7 @@ export default function HoverRating() {
                                 <li>
                                     <div><b>DOG 7</b></div>
                                     <div>Front profile</div>
-                                    <img id="7" className="status3-pic" height="400" width="400"
+                                    <img id="7" className="status3-pic" //height="400" width="400"
                                         // src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=916075890,1662056472&fm=11&gp=0.jpg"/>
                                          src = {dog7}/>
                                     <div>How much you like the dog?</div>
@@ -462,7 +462,7 @@ export default function HoverRating() {
                                     {value6 !== null && <Box ml={2}>{labels[hover6 !== -1 ? hover6 : value6]}</Box>}
 
                                     <div>Side profile</div>
-                                    <Image id="1" className="status3-pic" height="400" width="400"
+                                    <Image id="1" className="status3-pic" //height="400" width="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                            src = {dog71}/>
@@ -489,7 +489,7 @@ export default function HoverRating() {
                                 <li>
                                     <div><b>DOG 8</b></div>
                                     <div>Front profile</div>
-                                    <img id="8" className="status3-pic" height="400" width="400"
+                                    <img id="8" className="status3-pic" //height="400" width="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2870177897,1063334582&fm=26&gp=0.jpg"/>
                                          src = {dog81}/>
                                     <div>How much you like the dog?</div>
@@ -509,7 +509,7 @@ export default function HoverRating() {
                                     {value7 !== null && <Box ml={2}>{labels[hover7 !== -1 ? hover7 : value7]}</Box>}
 
                                     <div>Side profile</div>
-                                    <Image id="1" className="status3-pic" height="400" width="400"
+                                    <Image id="1" className="status3-pic" //height="400" width="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                            src = {dog8}/>
@@ -534,7 +534,7 @@ export default function HoverRating() {
                                 <li>
                                     <div><b>DOG 9</b></div>
                                     <div>Front profile</div>
-                                    <img id="9" className="status3-pic" height="400" width="400"
+                                    <img id="9" className="status3-pic" //height="400" width="400"
                                          //src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1911301903,2982696630&fm=26&gp=0.jpg"/>
                                          src = {dog91}/>
                                     <div>How much you like the dog?</div>
@@ -555,7 +555,7 @@ export default function HoverRating() {
 
 
                                     <div>Side profile</div>
-                                    <Image id="1" className="status3-pic" height="400" width="400"
+                                    <Image id="1" className="status3-pic" //height="400" width="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                            src = {dog21}/>
