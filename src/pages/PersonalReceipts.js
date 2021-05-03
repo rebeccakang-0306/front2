@@ -155,7 +155,6 @@ export default function HoverRating() {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
 
             <div className={"pics6"}>
                 <h1>Survey</h1>
@@ -586,7 +585,6 @@ export default function HoverRating() {
                     Submit
                 </Button>
             </div>
-        </div>
         </div>
     );
 }
