@@ -4,7 +4,7 @@ import  "../styles/NewNav.css"
 
 export default function UserpageNav() {
     return (
-        <nav className={'home-h1'}>
+        <nav>
             <NavLink to="/personalpage"> Survey Page </NavLink>
             <NavLink className={"Logout"} exact to = "/" > Logout </NavLink>
         </nav>
