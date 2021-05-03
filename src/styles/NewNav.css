@@ -1,8 +1,6 @@
 .NewNav{
     display: flex;
-    padding: 2rem;
-    color: black;
-    background-color: white;
+    display: -webkit-flex;
 
 }
 
