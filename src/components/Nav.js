@@ -20,7 +20,17 @@ export default function Nav() {
                 <NavLink className={"AnimalShapes"} exact to = "/" > Home </NavLink>
             </nav>
         );
-    }else
+    }
+    else if (window.location.pathname.split("/").pop() === 'surveyResult' || window.location.pathname.split("/").pop() === 'receipts'){
+        return (
+            <nav className={'NewNav'}>
+                <NavLink to="/users"> Users </NavLink>
+                <NavLink to="/surveyResult"> Surveys </NavLink>
+                <NavLink className={"Logout"} exact to = "/" > Logout </NavLink>
+            </nav>
+        );
+    }
+    else
     {
         return (
             <nav className={'NewNav'}>
