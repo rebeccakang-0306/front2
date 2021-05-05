@@ -57,7 +57,7 @@ export class ReceiptTable extends React.Component {
                             <th scope="col">wrinkle3</th>
                             <th scope="col">wrinkle2</th>
                             <th scope="col">wrinkle1</th>
-                            <th scope="col">Operation</th>
+                             <th scope="col">Operation</th>
                         </tr>
                         </thead>
                         <tbody>

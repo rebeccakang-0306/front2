@@ -112,7 +112,6 @@ export default function Receipts() {
     return (
         <div>
             <h1>Survey Result</h1>
-            <AddSurvey/>
             <ReceiptTable/>
         </div>
     );
