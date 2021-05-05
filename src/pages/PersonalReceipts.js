@@ -24,10 +24,9 @@ import dog6 from '../assets/dog6.jpg'
 import dog7 from '../assets/dog7.jpg'
 import dog8 from '../assets/dog8.jpg'
 import dog9 from '../assets/dog9.jpg'
-
 import dog10 from '../assets/dog10.jpg'
 import dog11 from '../assets/dog11.jpg'
-import dog12 from '../assets/dog12.png'
+import dog12 from '../assets/dog12.jpg'
 
 
 
