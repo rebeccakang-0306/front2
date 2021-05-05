@@ -170,17 +170,15 @@ export default function HoverRating() {
                                 {value !== null && <Box id= 'box1' ml={2}>{labels[hover !== -1 ? hover : value]}</Box>}
                         </li>
                         <li>
-
                              <div className={"small"}>Muzzle Length = 2 </div>
                             <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
-
                                    src = {dog2}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
-                                value={value0}
-                                precision={0.5}
+                                value0={value0}
+                                precision0={0.5}
                                 onChange={(event0, newValue0) => {
                                     setValue0(newValue0);
                                 }}
