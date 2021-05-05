@@ -61,7 +61,8 @@ td.userData {
 }
 
 td.surveyData {
-    width: 2%;
+    width: 6.6667%;
+    max-width: 150px;
 }
 
 td.receiptData {
