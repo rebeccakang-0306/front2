@@ -143,7 +143,7 @@ export default function HoverRating() {
     const classes = useStyles();
 
     return (
-
+        <div className={classes.root}>
             <div className={"pics6"}>
                 <h1>Survey</h1>
                 <div className={"title"}><b>Try to forces on the muzzle length when pick up your "ideal" dog!</b></div>
@@ -177,13 +177,13 @@ export default function HoverRating() {
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
-                                value0={value0}
-                                precision0={0.5}
+                                value={value0}
+                                precision={0.5}
                                 onChange={(event0, newValue0) => {
-                                    setValue0(newValue0);
+                                    setValue(newValue0);
                                 }}
                                 onChangeActive={(event0, newHover0) => {
-                                    setHover0(newHover0);
+                                    setHover(newHover0);
                                 }}
                             />
                             {value0 !== null && <Box id= 'box1' ml={2}>{labels[hover0 !== -1 ? hover0 : value0]}</Box>}
@@ -563,6 +563,7 @@ export default function HoverRating() {
                     Submit
                 </Button>
             </div>
+        </div>
         </div>
     );
 }
