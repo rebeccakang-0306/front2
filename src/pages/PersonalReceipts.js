@@ -117,6 +117,8 @@ export default function HoverRating() {
     const [value50, setValue50] = React.useState(0);
     const [hover50, setHover50] = React.useState(-1);
 
+    {/*
+
     const [value6, setValue6] = React.useState(0);
     const [hover6, setHover6] = React.useState(-1);
 
@@ -137,7 +139,7 @@ export default function HoverRating() {
 
 
     const [value80, setValue80] = React.useState(0);
-    const [hover80, setHover80] = React.useState(-1);
+    const [hover80, setHover80] = React.useState(-1); */}
 
     const classes = useStyles();
 

@@ -44,18 +44,18 @@ export class ReceiptTable extends React.Component {
                         <tr>
                             <th scope="col">UserName</th>
                             <th scope="col">UserType</th>
-                            <th scope="col">Muzzle-length:1</th>
-                            <th scope="col">Muzzle-length:2</th>
-                            <th scope="col">Muzzle-length:3</th>
-                            <th scope="col">Muzzle-length:4</th>
-                            <th scope="col">Muzzle-length:5</th>
-                            <th scope="col">Muzzle-length:6</th>
-                            <th scope="col">wrinkle-number:6</th>
-                            <th scope="col">wrinkle-number:5</th>
-                            <th scope="col">wrinkle-number:4</th>
-                            <th scope="col">wrinkle-number:3</th>
-                            <th scope="col">wrinkle-number:2</th>
-                            <th scope="col">wrinkle-number:1</th>
+                            <th scope="col">Muzzle1</th>
+                            <th scope="col">Muzzle2</th>
+                            <th scope="col">Muzzle3</th>
+                            <th scope="col">Muzzle4</th>
+                            <th scope="col">Muzzle5</th>
+                            <th scope="col">Muzzle6</th>
+                            <th scope="col">wrinkle6</th>
+                            <th scope="col">wrinkle5</th>
+                            <th scope="col">wrinkle4</th>
+                            <th scope="col">wrinkle3</th>
+                            <th scope="col">wrinkle2</th>
+                            <th scope="col">wrinkle1</th>
                             <th scope="col">Operation</th>
                         </tr>
                         </thead>
@@ -81,8 +81,8 @@ export class ReceiptTable extends React.Component {
                                 <td className={"surveyData"}>{survey.photo7s}</td>
                                 <td className={"surveyData"}>{survey.photo8f}</td>
                                 <td className={"surveyData"}>{survey.photo8s}</td>
-                                <td className={"surveyData"}>{survey.photo9f}</td> */}
-                                <td className={"surveyData"}>{survey.photo9s}</td>
+                                <td className={"surveyData"}>{survey.photo9f}</td>
+                                <td className={"surveyData"}>{survey.photo9s}</td> */}
                                 <td className={"surveyData"}><Receipt key={survey._id} {...survey} /> </td>
                             </Tr>
                         })}
