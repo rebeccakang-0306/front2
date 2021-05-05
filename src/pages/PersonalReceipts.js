@@ -417,8 +417,8 @@ export default function HoverRating() {
                 </div>
 
 
-<!--
-                        <div id="status3_pics">
+                {/*
+           <div id="status3_pics">
                             <ul className="pics6_status3">
                                 <li>
                                     <div><b>DOG 7</b></div>
@@ -560,7 +560,7 @@ export default function HoverRating() {
                             </ul>
 
 
-                        </div> -->
+                        </div> */}
                 <div>
                 <Button variant="contained" color = "primary" onClick={() => { onSubmit(value,value0,value1,value10,value2,value20,value3,value30,
                     value4,value40,value5,value50) }}>

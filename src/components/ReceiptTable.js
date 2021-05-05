@@ -77,12 +77,11 @@ export class ReceiptTable extends React.Component {
                                 <td className={"surveyData"}>{survey.Wrinkle3}</td>
                                 <td className={"surveyData"}>{survey.Wrinkle2}</td>
                                 <td className={"surveyData"}>{survey.Wrinkle1}</td>
-                                <!--
-                                <td className={"surveyData"}>{survey.photo7f}</td>
+                                {/* <td className={"surveyData"}>{survey.photo7f}</td>
                                 <td className={"surveyData"}>{survey.photo7s}</td>
                                 <td className={"surveyData"}>{survey.photo8f}</td>
                                 <td className={"surveyData"}>{survey.photo8s}</td>
-                                <td className={"surveyData"}>{survey.photo9f}</td> -->
+                                <td className={"surveyData"}>{survey.photo9f}</td> */}
                                 <td className={"surveyData"}>{survey.photo9s}</td>
                                 <td className={"surveyData"}><Receipt key={survey._id} {...survey} /> </td>
                             </Tr>
