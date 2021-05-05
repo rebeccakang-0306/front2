@@ -37,12 +37,12 @@ function onSubmit(v1,v11,v2,v21,v3,v31,v4,v41,v5,v51,v6,v61) {
     createSurvey({
         username:getUsername(),
         usertype:getUsertype(),
-        Muzzlue1:v1,
-            Muzzlue2:v11,
-            Muzzlue3:v2,
-            Muzzlue4:v21,
-            Muzzlue5:v3,
-            Muzzlue6:v31,
+        Muzzle1:v1,
+            Muzzle2:v11,
+            Muzzle3:v2,
+            Muzzle4:v21,
+            Muzzle5:v3,
+            Muzzle6:v31,
             Wrinkle6:v4,
             Wrinkle5:v41,
             Wrinkle4:v5,
@@ -268,7 +268,7 @@ export default function HoverRating() {
                                 }}
                             />
 
-                            {value20 !== null && <Box id= 'box1' ml={2}>{labels[hover20 !== -1 ? hover10 : value20]}</Box>}
+                            {value20 !== null && <Box id= 'box1' ml={2}>{labels[hover20 !== -1 ? hover20 : value20]}</Box>}
 
                         </li>
 
