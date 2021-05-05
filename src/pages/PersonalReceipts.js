@@ -182,14 +182,13 @@ export default function HoverRating() {
                                 value={value0}
                                 precision={0.5}
                                 onChange={(event0, newValue0) => {
-                                    setValue(newValue0);
+                                    setValue0(newValue0);
                                 }}
                                 onChangeActive={(event0, newHover0) => {
-                                    setHover(newHover0);
+                                    setHover0(newHover0);
                                 }}
                             />
                             {value0 !== null && <Box id= 'box1' ml={2}>{labels[hover0 !== -1 ? hover0 : value0]}</Box>}
-
                         </li>
 
                         <li>
@@ -224,10 +223,10 @@ export default function HoverRating() {
                                 value={value10}
                                 precision={0.5}
                                 onChange={(event10, newValue10) => {
-                                    setValue(newValue10);
+                                    setValue10(newValue10);
                                 }}
                                 onChangeActive={(event10, newHover10) => {
-                                    setHover(newHover10);
+                                    setHover10(newHover10);
                                 }}
                             />
                             {value10 !== null && <Box id= 'box1' ml={2}>{labels[hover10 !== -1 ? hover10 : value10]}</Box>}
@@ -263,10 +262,10 @@ export default function HoverRating() {
                                 value={value20}
                                 precision={0.5}
                                 onChange={(event20, newValue20) => {
-                                    setValue(newValue20);
+                                    setValue20(newValue20);
                                 }}
                                 onChangeActive={(event20, newHover20) => {
-                                    setHover(newHover20);
+                                    setHover20(newHover20);
                                 }}
                             />
 
@@ -312,10 +311,10 @@ export default function HoverRating() {
                                 value={value30}
                                 precision={0.5}
                                 onChange={(event30, newValue30) => {
-                                    setValue(newValue30);
+                                    setValue30(newValue30);
                                 }}
                                 onChangeActive={(event30, newHover30) => {
-                                    setHover(newHover30);
+                                    setHover30(newHover30);
                                 }}
                             />
                             {value30 !== null && <Box id= 'box1' ml={2}>{labels[hover30 !== -1 ? hover30 : value30]}</Box>}
@@ -356,10 +355,10 @@ export default function HoverRating() {
                                 value={value40}
                                 precision={0.5}
                                 onChange={(event40, newValue40) => {
-                                    setValue(newValue40);
+                                    setValue40(newValue40);
                                 }}
                                 onChangeActive={(event40, newHover40) => {
-                                    setHover(newHover40);
+                                    setHover40(newHover40);
                                 }}
                             />
                             {value40 !== null && <Box id= 'box1' ml={2}>{labels[hover40 !== -1 ? hover40 : value40]}</Box>}
@@ -403,10 +402,10 @@ export default function HoverRating() {
                                 value={value50}
                                 precision={0.5}
                                 onChange={(event50, newValue50) => {
-                                    setValue(newValue50);
+                                    setValue50(newValue50);
                                 }}
                                 onChangeActive={(event50, newHover50) => {
-                                    setHover(newHover50);
+                                    setHover50(newHover50);
                                 }}
                             />
                             {value50 !== null && <Box id= 'box1' ml={2}>{labels[hover50 !== -1 ? hover50 : value50]}</Box>}
