@@ -166,9 +166,10 @@ export default function HoverRating() {
                                     setHover(newHover);
                                 }}
                             />
-                            </li>
+
                                 {value !== null && <Box id= 'box1' ml={2}>{labels[hover !== -1 ? hover : value]}</Box>}
-                                <li>
+                        </li>
+                        <li>
 
                              <div className={"small"}>Muzzle Length = 2 </div>
                             <Image id="1" className="status3-pic" //height="400" width="400"
@@ -209,8 +210,8 @@ export default function HoverRating() {
                                     }}
                                 />
                                 {value1 !== null && <Box ml={2}>{labels[hover1 !== -1 ? hover1 : value1]}</Box>}
+                        </li>
 
-</li>
                         <li>
                              <div className={"small"}>Muzzle Length = 4</div>
                             <Image id="1" className="status3-pic" height="400"
@@ -230,7 +231,6 @@ export default function HoverRating() {
                                 }}
                             />
                             {value10 !== null && <Box id= 'box1' ml={2}>{labels[hover10 !== -1 ? hover10 : value10]}</Box>}
-
                         </li>
                         <li>
                              <div className={"small"}>Muzzle Length = 5</div>
@@ -251,7 +251,7 @@ export default function HoverRating() {
                             />
                             {value2 !== null && <Box ml={2}>{labels[hover2 !== -1 ? hover2 : value2]}</Box>}
                         </li>
-<li>
+                        <li>
                              <div className={"small"}>Muzzle Length = 6</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
