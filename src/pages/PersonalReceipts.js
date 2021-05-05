@@ -187,7 +187,7 @@ export default function HoverRating() {
                                     setHover(newHover0);
                                 }}
                             />
-                            {value0 !== null && <Box id= 'box1' ml={2}>{labels[hover0 !== -1 ? hover0 : value0]}</Box>}-->
+                            {value0 !== null && <Box id= 'box1' ml={2}>{labels[hover0 !== -1 ? hover0 : value0]}</Box>}
 
                         </li>
 
@@ -217,7 +217,7 @@ export default function HoverRating() {
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog4}/>
-                            <div>How much you like the dog?</div>
+                            <div><h6>How much you like the dog?</h6></div>
                             <Rating
                                 name="hover-feedback"
                                 value={value10}
@@ -229,7 +229,7 @@ export default function HoverRating() {
                                     setHover(newHover10);
                                 }}
                             />
-                            {value10 !== null && <Box id= 'box1' ml={2}>{labels[hover10 !== -1 ? hover10 : value10]}</Box>}-->
+                            {value10 !== null && <Box id= 'box1' ml={2}>{labels[hover10 !== -1 ? hover10 : value10]}</Box>}
 
                         </li>
                         <li>
