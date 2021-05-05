@@ -5,6 +5,7 @@ import {getSurvey} from "../api";
 
 import {Receipt} from "../pages/Receipts";
 import {User} from "../pages/Users";
+import '../styles/Users.css';
 
 export class ReceiptTable extends React.Component {
     constructor(props) {
