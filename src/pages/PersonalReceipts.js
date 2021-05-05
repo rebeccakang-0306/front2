@@ -71,7 +71,6 @@ const labels = {
 
 const useStyles = makeStyles({
     root: {
-        width: 200,
         display: 'flex',
         alignItems: 'center',
     },
@@ -176,14 +175,14 @@ export default function HoverRating() {
                                    src = {dog2}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
-                                name="hover-feedback"
+                                name="hover-feedback1"
                                 value={value0}
                                 precision={0.5}
                                 onChange={(event0, newValue0) => {
-                                    setValue(newValue0);
+                                    setValue0(newValue0);
                                 }}
                                 onChangeActive={(event0, newHover0) => {
-                                    setHover(newHover0);
+                                    setHover0(newHover0);
                                 }}
                             />
                             {value0 !== null && <Box id= 'box1' ml={2}>{labels[hover0 !== -1 ? hover0 : value0]}</Box>}
@@ -196,7 +195,7 @@ export default function HoverRating() {
                                  src = {dog3}/>
                             <div className={"small"}>How much you like the dog?</div>
                                 <Rating
-                                    name="hover-feedback1"
+                                    name="hover-feedback2"
                                     value={value1}
                                     precision={0.5}
                                     onChange={(event1, newValue1) => {
@@ -217,7 +216,7 @@ export default function HoverRating() {
                                    src = {dog4}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
-                                name="hover-feedback"
+                                name="hover-feedback3"
                                 value={value10}
                                 precision={0.5}
                                 onChange={(event10, newValue10) => {
@@ -236,7 +235,7 @@ export default function HoverRating() {
                                  src = {dog5}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
-                                name="hover-feedback2"
+                                name="hover-feedback4"
                                 value={value2}
                                 precision={0.5}
                                 onChange={(event2, newValue2) => {
@@ -256,7 +255,7 @@ export default function HoverRating() {
                                    src = {dog6}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
-                                name="hover-feedback"
+                                name="hover-feedback5"
                                 value={value20}
                                 precision={0.5}
                                 onChange={(event20, newValue20) => {
@@ -285,7 +284,7 @@ export default function HoverRating() {
                                  src = {dog7}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
-                                name="hover-feedback3"
+                                name="hover-feedback6"
                                 value={value3}
                                 precision={0.5}
                                 onChange={(event3, newValue3) => {
@@ -305,7 +304,7 @@ export default function HoverRating() {
                                    src = {dog8}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
-                                name="hover-feedback"
+                                name="hover-feedback7"
                                 value={value30}
                                 precision={0.5}
                                 onChange={(event30, newValue30) => {
@@ -329,7 +328,7 @@ export default function HoverRating() {
 
 
                             <Rating
-                                name="hover-feedback4"
+                                name="hover-feedback8"
                                 value={value4}
                                 precision={0.5}
                                 onChange={(event4, newValue4) => {
@@ -349,7 +348,7 @@ export default function HoverRating() {
                                    src = {dog10}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
-                                name="hover-feedback"
+                                name="hover-feedback9"
                                 value={value40}
                                 precision={0.5}
                                 onChange={(event40, newValue40) => {
@@ -376,7 +375,7 @@ export default function HoverRating() {
 
 
                             <Rating
-                                name="hover-feedback5"
+                                name="hover-feedback10"
                                 value={value5}
                                 precision={0.5}
                                 onChange={(event5, newValue5) => {
@@ -396,7 +395,7 @@ export default function HoverRating() {
                                    src = {dog12}/>
                             <div className={"small"}>How much you like the dog?</div>
                             <Rating
-                                name="hover-feedback"
+                                name="hover-feedback11"
                                 value={value50}
                                 precision={0.5}
                                 onChange={(event50, newValue50) => {
