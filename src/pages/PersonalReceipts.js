@@ -217,7 +217,7 @@ export default function HoverRating() {
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog4}/>
-                            <div><h6>How much you like the dog?</h6></div>
+                            <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
                                 value={value10}
