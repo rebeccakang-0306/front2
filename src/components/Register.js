@@ -63,8 +63,9 @@ export default class Login extends Component {
                                             <select id = {"usertype"} className={"usertype1"} onChange={this.handleSelectChange.bind(this)}>
                                                 <option value="" disabled selected>User Type</option>
                                                 <option value="Vet">Vet</option>
-                                                <option value="Dog Owner">Dog Owner</option>
+                                                <option value="Public">Public</option>
                                                 <option value="Dog Breeder">Dog Breeder</option>
+
                                             </select>
 
                                         <Form.Text style={{display: "flex"}} className="text-muted">

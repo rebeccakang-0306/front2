@@ -71,8 +71,9 @@ export default function Adduser() {
                 }}>
                 <option value="" disabled selected>User Type</option>
                     <option value="Vet">Vet</option>
-                    <option value="Dog Owner">Dog Owner</option>
+                    <option value="Public">Public</option>
                     <option value="Dog Breeder">Dog Breeder</option>
+
                 </select>
 
                 {/*

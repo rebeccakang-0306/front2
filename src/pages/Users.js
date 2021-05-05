@@ -79,7 +79,7 @@ export function UserExtend(props) {
                 <input type="text" name="username" value = {username_input} onChange={event => { setUsername(event.target.value);}}/>
                 <select className={"usertype5"} name = "user_type" value = {usertype_input} onChange={event => { setUserType(event.target.value);}}>
                     <option value="Vet">Vet</option>
-                    <option value="Dog Owner">Dog Owner</option>
+                    <option value="Public">Public</option>
                     <option value="Dog Breeder">Dog Breeder</option>
                 </select>
             </form>

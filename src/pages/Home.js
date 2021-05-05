@@ -55,7 +55,7 @@ export default class Login extends Component {
                 </div>
                 <div className={"features"}>
                     <h6>The purpose is to explore how much the "ideal" pug face might look the same or different to various groups of people
-                        (e.g. veterinarians, dog breeders, dog owners).
+                        (e.g. veterinarians, dog breeders, dog owners, not dog owners).
                         This would be very useful as the extreme body types being selected for as 'cute' have serious health and welfare
                         impacts for animals, such as not being able to breathe normally.
                         Given that people make the breeding decisions for these dogs, understanding what "ideal" looks like to different
@@ -124,8 +124,9 @@ export default class Login extends Component {
                             <select id={"usertype"} className={"usertype3"}>
                                 <option value="" disabled selected>User Type</option>
                                 <option value="Vet">Vet</option>
-                                <option value="Dog Owner">Dog Owner</option>
+                                <option value="Public">Public</option>
                                 <option value="Dog Breeder">Dog Breeder</option>
+
                             </select>
 
                         </Form.Group>

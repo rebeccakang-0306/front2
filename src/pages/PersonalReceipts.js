@@ -16,51 +16,40 @@ import {getUsername, getUsertype} from "../components/CurrentUser";
 import Image from "react-bootstrap/Image";
 
 import dog1 from '../assets/dog1.jpg'
-import dog2 from '../assets/dog2.png'
-import dog3 from '../assets/dog3.png'
-import dog4 from '../assets/dog4.png'
+import dog2 from '../assets/dog2.jpg'
+import dog3 from '../assets/dog3.jpg'
+import dog4 from '../assets/dog4.jpg'
 import dog5 from '../assets/dog5.jpg'
-import dog6 from '../assets/dog6.png'
-import dog7 from '../assets/dog7.png'
-import dog8 from '../assets/dog8.png'
-import dog9 from '../assets/dog9.png'
+import dog6 from '../assets/dog6.jpg'
+import dog7 from '../assets/dog7.jpg'
+import dog8 from '../assets/dog8.jpg'
+import dog9 from '../assets/dog9.jpg'
 
-import dog11 from '../assets/dog1.1.png'
-import dog21 from '../assets/dog2.1.png'
-import dog31 from '../assets/dog3.1.png'
-import dog41 from '../assets/dog4.1.jpg'
-import dog51 from '../assets/dog5.1.png'
-import dog61 from '../assets/dog6.1.png'
-import dog71 from '../assets/dog7.1.png'
-import dog81 from '../assets/dog8.1.png'
-import dog91 from '../assets/dog9.1.png'
+import dog10 from '../assets/dog10.jpg'
+import dog11 from '../assets/dog11.jpg'
+import dog12 from '../assets/dog12.png'
 
 
 
 
 
-function onSubmit(v1,v11,v2,v21,v3,v31,v4,v41,v5,v51,v6,v61,v7,v71,v8,v81,v9,v91) {
+
+function onSubmit(v1,v11,v2,v21,v3,v31,v4,v41,v5,v51,v6,v61) {
     createSurvey({
         username:getUsername(),
         usertype:getUsertype(),
-        photo1f:v1,
-            photo1s:v11,
-        photo2f:v2,
-            photo2s:v21,
-        photo3f:v3,
-            photo3s:v31,
-        photo4f:v4,
-            photo4s:v41,
-        photo5f:v5,
-            photo5s:v51,
-        photo6f:v6,
-            photo6s:v61,
-        photo7f:v7,
-            photo7s:v71,
-        photo8f:v8,
-            photo8s:v81,
-        photo9f:v9,
-            photo9s:v91,
+        Muzzlue1:v1,
+            Muzzlue2:v11,
+            Muzzlue3:v2,
+            Muzzlue4:v21,
+            Muzzlue5:v3,
+            Muzzlue6:v31,
+            Wrinkle6:v4,
+            Wrinkle5:v41,
+            Wrinkle4:v5,
+            Wrinkle3:v51,
+            Wrinkle2:v6,
+            Wrinkle1:v61,
     }
 
         )
@@ -158,15 +147,14 @@ export default function HoverRating() {
 
             <div className={"pics6"}>
                 <h1>Survey</h1>
+                <div><b>Try to forces on the muzzle length when pick up your "ideal" dog!</b></div>
                 <div id="status3_pics">
                     <ul className={"pics6_status3"}>
                         <li>
-                            <div><b>DOG 1</b></div>
-                            <div>Front profile</div>
+                            <div>Muzzle Length = 1</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
-
-                                   src = {dog11}/>
+                                   src = {dog1}/>
                                <div>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
@@ -179,12 +167,15 @@ export default function HoverRating() {
                                     setHover(newHover);
                                 }}
                             />
+                            </li>
                                 {value !== null && <Box id= 'box1' ml={2}>{labels[hover !== -1 ? hover : value]}</Box>}
-                            <div>Side profile</div>
+                                <li>
+
+                            <div>Muzzle Length = 2 </div>
                             <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
-                                   src = {dog1}/>
+                                   src = {dog2}/>
                             <div>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
@@ -197,20 +188,16 @@ export default function HoverRating() {
                                     setHover(newHover0);
                                 }}
                             />
-                            {value0 !== null && <Box id= 'box1' ml={2}>{labels[hover0 !== -1 ? hover0 : value0]}</Box>}
+                            {value0 !== null && <Box id= 'box1' ml={2}>{labels[hover0 !== -1 ? hover0 : value0]}</Box>}-->
 
                         </li>
 
-
                         <li>
-                            <div><b>DOG 2</b></div>
-                            <div>Front profile</div>
+                            <div>Muzzle length = 3</div>
                             <img id="2" className="status3-pic" height="400"
                                  //src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1541213992,76400213&fm=26&gp=0.jpg"/>
-                                 src = {dog21}/>
+                                 src = {dog3}/>
                             <div>How much you like the dog?</div>
-
-
                                 <Rating
                                     name="hover-feedback1"
                                     value={value1}
@@ -224,12 +211,13 @@ export default function HoverRating() {
                                 />
                                 {value1 !== null && <Box ml={2}>{labels[hover1 !== -1 ? hover1 : value1]}</Box>}
 
-
-                            <div>Side profile</div>
+</li>
+                        <li>
+                            <div>Muzzle Length = 4</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
-                                   src = {dog2}/>
+                                   src = {dog4}/>
                             <div>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
@@ -242,18 +230,15 @@ export default function HoverRating() {
                                     setHover(newHover10);
                                 }}
                             />
-                            {value10 !== null && <Box id= 'box1' ml={2}>{labels[hover10 !== -1 ? hover10 : value10]}</Box>}
+                            {value10 !== null && <Box id= 'box1' ml={2}>{labels[hover10 !== -1 ? hover10 : value10]}</Box>}-->
 
                         </li>
                         <li>
-                            <div><b>DOG 3</b></div>
-                            <div>Front profile</div>
+                            <div>Muzzle length = 5</div>
                             <img id="3" className="status3-pic" height="400"
                                  //src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1867263544,2857916448&fm=26&gp=0.jpg"/>
-                                 src = {dog31}/>
+                                 src = {dog5}/>
                             <div>How much you like the dog?</div>
-
-
                             <Rating
                                 name="hover-feedback2"
                                 value={value2}
@@ -266,13 +251,13 @@ export default function HoverRating() {
                                 }}
                             />
                             {value2 !== null && <Box ml={2}>{labels[hover2 !== -1 ? hover2 : value2]}</Box>}
-
-
-                            <div>Side profile</div>
+                        </li>
+<li>
+                            <div>Muzzle Length = 6</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
-                                   src = {dog3}/>
+                                   src = {dog6}/>
                             <div>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
@@ -285,9 +270,8 @@ export default function HoverRating() {
                                     setHover(newHover20);
                                 }}
                             />
-                            {value20 !== null && <Box id= 'box1' ml={2}>{labels[hover20 !== -1 ? hover10 : value20]}</Box>}
 
-
+                            {value20 !== null && <Box id= 'box1' ml={2}>{labels[hover20 !== -1 ? hover10 : value20]}</Box>}-->
 
                         </li>
 
@@ -295,15 +279,14 @@ export default function HoverRating() {
                 </div>
 
 
-
+                <div><b>Try to forces on the amount of wrinkles when pick up your "ideal" dog!</b></div>
                 <div id="status3_pics">
                     <ul className="pics6_status3">
                         <li>
-                            <div><b>DOG 4</b></div>
-                            <div>Front profile</div>
+                            <div>Amount of wrinkles = 6</div>
                             <img id="4" className="status3-pic" height="400"
                                  //src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2219225502,1868692565&fm=26&gp=0.jpg"/>
-                                 src = {dog41}/>
+                                 src = {dog7}/>
                             <div>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback3"
@@ -317,12 +300,13 @@ export default function HoverRating() {
                                 }}
                             />
                             {value3 !== null && <Box id= 'box1' ml={2}>{labels[hover3 !== -1 ? hover3 : value3]}</Box>}
-
-                            <div>Side profile</div>
+                        </li>
+                        <li>
+                            <div>Amount of wrinkles = 5</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
-                                   src = {dog4}/>
+                                   src = {dog8}/>
                             <div>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
@@ -337,15 +321,14 @@ export default function HoverRating() {
                             />
                             {value30 !== null && <Box id= 'box1' ml={2}>{labels[hover30 !== -1 ? hover30 : value30]}</Box>}
 
-
                         </li>
 
                         <li>
-                            <div><b>DOG 5</b></div>
-                            <div>Front profile</div>
+
+                            <div>Amount of wrinkles = 4</div>
                             <img id="5" className="status3-pic" height="400"
                                  //src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=979862297,3441058921&fm=26&gp=0.jpg"/>
-                            src = {dog5}/>
+                            src = {dog9}/>
                             <div>How much you like the dog?</div>
 
 
@@ -361,12 +344,13 @@ export default function HoverRating() {
                                 }}
                             />
                             {value4 !== null && <Box ml={2}>{labels[hover4 !== -1 ? hover4 : value4]}</Box>}
-
-                            <div>Side profile</div>
+                        </li>
+                        <li>
+                            <div>Amount of wrinkles = 3</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
-                                   src = {dog51}/>
+                                   src = {dog10}/>
                             <div>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
@@ -386,12 +370,12 @@ export default function HoverRating() {
 
 
                         <li>
-                            <div><b>DOG 6</b></div>
-                            <div>Front profile</div>
+
+                            <div>Amount of wrinkles = 2</div>
 
                             <img id="6" className="status3-pic" height="400"
                                  //src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3477240067,1549523397&fm=26&gp=0.jpg"/>
-                                 src = {dog61}/>
+                                 src = {dog11}/>
                             <div>How much you like the dog?</div>
 
 
@@ -407,12 +391,13 @@ export default function HoverRating() {
                                 }}
                             />
                             {value5 !== null && <Box ml={2}>{labels[hover5 !== -1 ? hover5 : value5]}</Box>}
-
-                            <div>Side profile</div>
+                        </li>
+                        <li>
+                            <div>Amount of wrinkles = 1</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
-                                   src = {dog6}/>
+                                   src = {dog12}/>
                             <div>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
@@ -427,14 +412,12 @@ export default function HoverRating() {
                             />
                             {value50 !== null && <Box id= 'box1' ml={2}>{labels[hover50 !== -1 ? hover50 : value50]}</Box>}
 
-
-
                         </li>
                     </ul>
                 </div>
 
 
-
+<!--
                         <div id="status3_pics">
                             <ul className="pics6_status3">
                                 <li>
@@ -577,11 +560,10 @@ export default function HoverRating() {
                             </ul>
 
 
-                        </div>
+                        </div> -->
                 <div>
-
                 <Button variant="contained" color = "primary" onClick={() => { onSubmit(value,value0,value1,value10,value2,value20,value3,value30,
-                    value4,value40,value5,value50,value6,value60,value7,value70,value8,value80) }}>
+                    value4,value40,value5,value50) }}>
                     Submit
                 </Button>
             </div>
