@@ -270,7 +270,7 @@ export default function HoverRating() {
                                 }}
                             />
 
-                            {value20 !== null && <Box id= 'box1' ml={2}>{labels[hover20 !== -1 ? hover10 : value20]}</Box>}-->
+                            {value20 !== null && <Box id= 'box1' ml={2}>{labels[hover20 !== -1 ? hover10 : value20]}</Box>}
 
                         </li>
 
