@@ -235,5 +235,8 @@ height: 100%;
     text-align: center;
 }
 .small {
-    font-size:12px;
+    font-size:13px;
+}
+.title{
+    font-size: 20px;
 }

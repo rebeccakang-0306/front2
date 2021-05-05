@@ -146,15 +146,15 @@ export default function HoverRating() {
 
             <div className={"pics6"}>
                 <h1>Survey</h1>
-                <div><b>Try to forces on the muzzle length when pick up your "ideal" dog!</b></div>
+                <div className={"title"}><b>Try to forces on the muzzle length when pick up your "ideal" dog!</b></div>
                 <div id="status3_pics">
                     <ul className={"pics6_status3"}>
                         <li>
-                            <div>Muzzle Length = 1</div>
+                             <div className={"small"}>Muzzle Length = 1</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
                                    src = {dog1}/>
-                               <div>How much you like the dog?</div>
+                               <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
                                 value={value}
@@ -170,12 +170,12 @@ export default function HoverRating() {
                                 {value !== null && <Box id= 'box1' ml={2}>{labels[hover !== -1 ? hover : value]}</Box>}
                                 <li>
 
-                            <div>Muzzle Length = 2 </div>
+                             <div className={"small"}>Muzzle Length = 2 </div>
                             <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog2}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
                                 value={value0}
@@ -192,11 +192,11 @@ export default function HoverRating() {
                         </li>
 
                         <li>
-                            <div>Muzzle length = 3</div>
+                             <div className={"small"}>Muzzle Length = 3</div>
                             <img id="2" className="status3-pic" height="400"
                                  //src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1541213992,76400213&fm=26&gp=0.jpg"/>
                                  src = {dog3}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
                                 <Rating
                                     name="hover-feedback1"
                                     value={value1}
@@ -212,7 +212,7 @@ export default function HoverRating() {
 
 </li>
                         <li>
-                            <div>Muzzle Length = 4</div>
+                             <div className={"small"}>Muzzle Length = 4</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
@@ -233,11 +233,11 @@ export default function HoverRating() {
 
                         </li>
                         <li>
-                            <div>Muzzle length = 5</div>
+                             <div className={"small"}>Muzzle Length = 5</div>
                             <img id="3" className="status3-pic" height="400"
                                  //src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1867263544,2857916448&fm=26&gp=0.jpg"/>
                                  src = {dog5}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback2"
                                 value={value2}
@@ -252,12 +252,12 @@ export default function HoverRating() {
                             {value2 !== null && <Box ml={2}>{labels[hover2 !== -1 ? hover2 : value2]}</Box>}
                         </li>
 <li>
-                            <div>Muzzle Length = 6</div>
+                             <div className={"small"}>Muzzle Length = 6</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog6}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
                                 value={value20}
@@ -278,15 +278,15 @@ export default function HoverRating() {
                 </div>
 
 
-                <div><b>Try to forces on the amount of wrinkles when pick up your "ideal" dog!</b></div>
+                <div className={"title"}><b>Try to forces on the amount of wrinkles when pick up your "ideal" dog!</b></div>
                 <div id="status3_pics">
                     <ul className="pics6_status3">
                         <li>
-                            <div>Amount of wrinkles = 6</div>
+                              <div className={"small"}>Amount of wrinkles = 6</div>
                             <img id="4" className="status3-pic" height="400"
                                  //src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2219225502,1868692565&fm=26&gp=0.jpg"/>
                                  src = {dog7}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback3"
                                 value={value3}
@@ -301,12 +301,12 @@ export default function HoverRating() {
                             {value3 !== null && <Box id= 'box1' ml={2}>{labels[hover3 !== -1 ? hover3 : value3]}</Box>}
                         </li>
                         <li>
-                            <div>Amount of wrinkles = 5</div>
+                              <div className={"small"}>Amount of wrinkles = 5</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog8}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
                                 value={value30}
@@ -324,11 +324,11 @@ export default function HoverRating() {
 
                         <li>
 
-                            <div>Amount of wrinkles = 4</div>
+                              <div className={"small"}>Amount of wrinkles = 4</div>
                             <img id="5" className="status3-pic" height="400"
                                  //src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=979862297,3441058921&fm=26&gp=0.jpg"/>
                             src = {dog9}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
 
 
                             <Rating
@@ -345,12 +345,12 @@ export default function HoverRating() {
                             {value4 !== null && <Box ml={2}>{labels[hover4 !== -1 ? hover4 : value4]}</Box>}
                         </li>
                         <li>
-                            <div>Amount of wrinkles = 3</div>
+                              <div className={"small"}>Amount of wrinkles = 3</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog10}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
                                 value={value40}
@@ -370,12 +370,12 @@ export default function HoverRating() {
 
                         <li>
 
-                            <div>Amount of wrinkles = 2</div>
+                              <div className={"small"}>Amount of wrinkles = 2</div>
 
                             <img id="6" className="status3-pic" height="400"
                                  //src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3477240067,1549523397&fm=26&gp=0.jpg"/>
                                  src = {dog11}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
 
 
                             <Rating
@@ -392,12 +392,12 @@ export default function HoverRating() {
                             {value5 !== null && <Box ml={2}>{labels[hover5 !== -1 ? hover5 : value5]}</Box>}
                         </li>
                         <li>
-                            <div>Amount of wrinkles = 1</div>
+                              <div className={"small"}>Amount of wrinkles = 1</div>
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog12}/>
-                            <div>How much you like the dog?</div>
+                            <div className={"small"}>How much you like the dog?</div>
                             <Rating
                                 name="hover-feedback"
                                 value={value50}
@@ -425,7 +425,7 @@ export default function HoverRating() {
                                     <img id="7" className="status3-pic" height="400"
                                         // src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=916075890,1662056472&fm=11&gp=0.jpg"/>
                                          src = {dog7}/>
-                                    <div>How much you like the dog?</div>
+                                    <div className={"small"}>How much you like the dog?</div>
 
 
 
@@ -447,7 +447,7 @@ export default function HoverRating() {
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                            src = {dog71}/>
-                                    <div>How much you like the dog?</div>
+                                    <div className={"small"}>How much you like the dog?</div>
                                     <Rating
                                         name="hover-feedback"
                                         value={value60}
@@ -473,7 +473,7 @@ export default function HoverRating() {
                                     <img id="8" className="status3-pic" height="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2870177897,1063334582&fm=26&gp=0.jpg"/>
                                          src = {dog81}/>
-                                    <div>How much you like the dog?</div>
+                                    <div className={"small"}>How much you like the dog?</div>
 
 
                                     <Rating
@@ -494,7 +494,7 @@ export default function HoverRating() {
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                            src = {dog8}/>
-                                    <div>How much you like the dog?</div>
+                                    <div className={"small"}>How much you like the dog?</div>
                                     <Rating
                                         name="hover-feedback"
                                         value={value70}
@@ -518,7 +518,7 @@ export default function HoverRating() {
                                     <img id="9" className="status3-pic" height="400"
                                          //src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1911301903,2982696630&fm=26&gp=0.jpg"/>
                                          src = {dog91}/>
-                                    <div>How much you like the dog?</div>
+                                    <div className={"small"}>How much you like the dog?</div>
 
 
                                     <Rating
@@ -540,7 +540,7 @@ export default function HoverRating() {
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                            src = {dog21}/>
-                                    <div>How much you like the dog?</div>
+                                    <div className={"small"}>How much you like the dog?</div>
                                     <Rating
                                         name="hover-feedback"
                                         value={value80}
@@ -624,7 +624,7 @@ export default
                             <li>
                                 <Image id="1" className="status3-pic" height="300" width="400" alt=""
                                        src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index = 0) => <span
@@ -648,7 +648,7 @@ export default
                                 <img id="2" className="status3-pic" height="300" width="400" alt=""
                                      src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1541213992,76400213&fm=26&gp=0.jpg"/>
 
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index) => <span
@@ -669,7 +669,7 @@ export default
                             <li>
                                 <img id="3" className="status3-pic" height="300" width="400" alt=""
                                      src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1867263544,2857916448&fm=26&gp=0.jpg"/>
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index) => <span
@@ -696,7 +696,7 @@ export default
                             <li>
                                 <img id="4" className="status3-pic" height="300" width="400" alt=""
                                      src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2219225502,1868692565&fm=26&gp=0.jpg"/>
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index) => <span
@@ -720,7 +720,7 @@ export default
                                 <img id="5" className="status3-pic" height="300" width="400" alt=""
                                      src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=979862297,3441058921&fm=26&gp=0.jpg"/>
 
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index) => <span
@@ -742,7 +742,7 @@ export default
                             <li>
                                 <img id="6" className="status3-pic" height="300" width="400" alt=""
                                      src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3477240067,1549523397&fm=26&gp=0.jpg"/>
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index) => <span
@@ -769,7 +769,7 @@ export default
                             <li>
                                 <img id="7" className="status3-pic" height="300" width="400" alt=""
                                      src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=916075890,1662056472&fm=11&gp=0.jpg"/>
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index) => <span
@@ -793,7 +793,7 @@ export default
                                 <img id="8" className="status3-pic" height="300" width="400" alt=""
                                      src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2870177897,1063334582&fm=26&gp=0.jpg"/>
 
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index) => <span
@@ -815,7 +815,7 @@ export default
                             <li>
                                 <img id="9" className="status3-pic" height="300" width="400" alt=""
                                      src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1911301903,2982696630&fm=26&gp=0.jpg"/>
-                                <div>How much you like the dog?</div>
+                                <div className={"small"}>How much you like the dog?</div>
                                 <div className="rate">
                                     <div className="rate__bg">
                                         {rateArray.map((item, index) => <span
