@@ -9,7 +9,7 @@ import dog from '../assets/dogc.jpg'
 import image from '../assets/homw1.png'
 import reg from '../assets/register.png'
 import login from '../assets/login.png'
-import survey from '../assets/survey.png'
+import survey from '../assets/survey.jpg'
 
 import {resetID, resetUsername, Userlogout} from "../components/CurrentUser";
 import {register} from "../api";
