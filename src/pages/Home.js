@@ -87,7 +87,7 @@ export default class Login extends Component {
                                     <div><b>Step 2: Log In</b></div>
                                 </li>
                                 <li>
-                                    <Image className="status3-pic" src={survey} alt={"Logo"}/>
+                                    <Image crop="fill" width="85%" src={survey}/>
                                     <div><b>Step 3: Survey</b></div>
                                 </li>
                             </ul>
