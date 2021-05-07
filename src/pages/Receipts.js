@@ -1,4 +1,4 @@
-{/*import React, { useState } from "react";
+import React, { useState } from "react";
 import {useReceipt, updateReceipt, deleteReceipt, useSurvey, deleteSurvey} from "../api";
 
 import Button from "../components/Button";
@@ -43,24 +43,6 @@ export function Receipt(receipt) {
         </div>
     );
 }
-
-
-export function User(user) {
-    const { _id } = user;
-    const [showUpdate, setShowUpdate] = useState(false);
-
-    return (
-        <div className={`user user-${_id}`} key={_id}>
-            <div className="info">
-                <Button className={"btn"} onClick={() => setShowUpdate(!showUpdate)}>
-                    {showUpdate ? "-" : "+"}
-                </Button>
-            </div>
-            <UserExtend {...user} showUpdate={showUpdate} />
-        </div>
-    );
-}
-
 export function ReceiptExtended(props) {
     const { _id, category, showUpdate } = props;
 
@@ -86,7 +68,24 @@ export function ReceiptExtended(props) {
     );
 }
 
-*/}
+{/*
+export function User(user) {
+    const { _id } = user;
+    const [showUpdate, setShowUpdate] = useState(false);
+
+    return (
+        <div className={`user user-${_id}`} key={_id}>
+            <div className="info">
+                <Button className={"btn"} onClick={() => setShowUpdate(!showUpdate)}>
+                    {showUpdate ? "-" : "+"}
+                </Button>
+            </div>
+            <UserExtend {...user} showUpdate={showUpdate} />
+        </div>
+    );
+}
+
+
 
 import React, { useState } from "react";
 import {useReceipt, updateReceipt, deleteReceipt} from "../api";
@@ -123,11 +122,6 @@ export function Receipt(receipt) {
 
     return (
         <div className={`user user-${_id}`} key={_id}>
-            <div className="info">
-                <Button className={"btn"} onClick={() => setShowUpdate(!showUpdate)}>
-                    {showUpdate ? "-" : "+"}
-                </Button>
-            </div>
             <ReceiptExtended {...receipt} showUpdate={showUpdate} />
         </div>
     );
@@ -150,8 +144,7 @@ export function ReceiptExtended(props) {
     return (
         <div className={`author-expand ${showUpdate ? "show" : ""}`}>
             <form>
-                {/* TODO - add value and onChange properties to inputs */}
-                <input type="text" name="category_input" value = {category_input} onChange={event => { setCategory(event.target.value);}}/>
+
                 <Button className={"btn-danger"} onClick={() => deleteReceipt(_id)}>
                     Delete
                 </Button>
@@ -160,4 +153,5 @@ export function ReceiptExtended(props) {
         </div>
     );
 }
+*/}
 

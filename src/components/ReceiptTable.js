@@ -43,7 +43,8 @@ export class ReceiptTable extends React.Component {
                     <Table className="receipt-table">
                         <thead>
                         <tr>
-                            <th scope="col">UserName</th>
+                            <th scope="col">SurveyID</th>
+                            {/*  <th scope="col">UserName</th>*/}
                             <th scope="col">UserType</th>
                             <th scope="col">Muzzle1</th>
                             <th scope="col">Muzzle2</th>
@@ -51,13 +52,31 @@ export class ReceiptTable extends React.Component {
                             <th scope="col">Muzzle4</th>
                             <th scope="col">Muzzle5</th>
                             <th scope="col">Muzzle6</th>
+                            <th scope="col">Muzzle7</th>
+                            <th scope="col">Muzzle8</th>
+                            <th scope="col">Muzzle9</th>
+                            <th scope="col">Muzzle10</th>
+                            <th scope="col">wrinkle10</th>
+                            <th scope="col">wrinkle9</th>
+                            <th scope="col">wrinkle8</th>
+                            <th scope="col">wrinkle7</th>
                             <th scope="col">wrinkle6</th>
                             <th scope="col">wrinkle5</th>
                             <th scope="col">wrinkle4</th>
                             <th scope="col">wrinkle3</th>
                             <th scope="col">wrinkle2</th>
                             <th scope="col">wrinkle1</th>
-                             <th scope="col">Operation</th>
+                            <th scope="col">Nostril10</th>
+                            <th scope="col">Nostril9</th>
+                            <th scope="col">Nostril8</th>
+                            <th scope="col">Nostril7</th>
+                            <th scope="col">Nostril6</th>
+                            <th scope="col">Nostril5</th>
+                            <th scope="col">Nostril4</th>
+                            <th scope="col">Nostril3</th>
+                            <th scope="col">Nostril2</th>
+                            <th scope="col">Nostril1</th>
+                            <th scope="col">Operation</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -72,18 +91,30 @@ export class ReceiptTable extends React.Component {
                                 <td className={"surveyData"}>{survey.Muzzle4}</td>
                                 <td className={"surveyData"}>{survey.Muzzle5}</td>
                                 <td className={"surveyData"}>{survey.Muzzle6}</td>
+                                <td className={"surveyData"}>{survey.Muzzle7}</td>
+                                <td className={"surveyData"}>{survey.Muzzle8}</td>
+                                <td className={"surveyData"}>{survey.Muzzle9}</td>
+                                <td className={"surveyData"}>{survey.Muzzle10}</td>
+                                <td className={"surveyData"}>{survey.Wrinkle10}</td>
+                                <td className={"surveyData"}>{survey.Wrinkle9}</td>
+                                <td className={"surveyData"}>{survey.Wrinkle8}</td>
+                                <td className={"surveyData"}>{survey.Wrinkle7}</td>
                                 <td className={"surveyData"}>{survey.Wrinkle6}</td>
                                 <td className={"surveyData"}>{survey.Wrinkle5}</td>
                                 <td className={"surveyData"}>{survey.Wrinkle4}</td>
                                 <td className={"surveyData"}>{survey.Wrinkle3}</td>
                                 <td className={"surveyData"}>{survey.Wrinkle2}</td>
                                 <td className={"surveyData"}>{survey.Wrinkle1}</td>
-                                {/* <td className={"surveyData"}>{survey.photo7f}</td>
-                                <td className={"surveyData"}>{survey.photo7s}</td>
-                                <td className={"surveyData"}>{survey.photo8f}</td>
-                                <td className={"surveyData"}>{survey.photo8s}</td>
-                                <td className={"surveyData"}>{survey.photo9f}</td>
-                                <td className={"surveyData"}>{survey.photo9s}</td> */}
+                                <td className={"surveyData"}>{survey.Nostril10}</td>
+                                <td className={"surveyData"}>{survey.Nostril9}</td>
+                                <td className={"surveyData"}>{survey.Nostril8}</td>
+                                <td className={"surveyData"}>{survey.Nostril7}</td>
+                                <td className={"surveyData"}>{survey.Nostril6}</td>
+                                <td className={"surveyData"}>{survey.Nostril5}</td>
+                                <td className={"surveyData"}>{survey.Nostril4}</td>
+                                <td className={"surveyData"}>{survey.Nostril3}</td>
+                                <td className={"surveyData"}>{survey.Nostril2}</td>
+                                <td className={"surveyData"}>{survey.Nostril1}</td>
                                 <td className={"surveyData"}><Receipt key={survey._id} {...survey} /> </td>
                             </Tr>
                         })}

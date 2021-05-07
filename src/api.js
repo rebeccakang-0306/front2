@@ -7,8 +7,9 @@ import {setUsername, setID, getID, Userlogin,setUsertype} from "./components/Cur
 
 // TODO - update this to be your url
 //const BASE_URL = "https://digiceipttest.herokuapp.com";
- const BASE_URL = "https://animal-shape-project.herokuapp.com";
-const Font_URL = "https://animal-shape-front.herokuapp.com";
+ //const BASE_URL = "https://animal-shape-project.herokuapp.com";
+const BASE_URL = "http://localhost:8000";
+const Font_URL = "http://localhost:3000";
 
 
 export function getUsers() {
@@ -65,6 +66,12 @@ export function register(e, lg) {
     const firstname = document.getElementById('firstname').value;
     const lastname = document.getElementById('lastname').value;
     const usertype = document.getElementById('usertype').value;
+if (!username || !usertype || !password) {
+        alert("Must include required fields");
+        return;
+
+    }
+
 
 
 
@@ -87,7 +94,9 @@ export function register(e, lg) {
                 alert("Username exists!");
                 let path = "/register";
                 lg.setState({redirectState: true, path:path})
-            }else{
+            }
+
+            else{
                 setID(resp.data);
                 setUsername(username);
                 setUsertype(usertype);
@@ -379,21 +388,22 @@ export function budget(query){
 
 
 export function createSurvey(state) {
-    const { username,usertype,Muzzle1,Muzzle2,Muzzle3,Muzzle4,Muzzle5,Muzzle6,Wrinkle6,Wrinkle5,Wrinkle4,Wrinkle3,Wrinkle2,
-        Wrinkle1 } = state;
+    console.log("11111")
+    const { username,usertype,Muzzle1,Muzzle2,Muzzle3,Muzzle4,Muzzle5,Muzzle6,Muzzle7,Muzzle8,Muzzle9,Muzzle10,Wrinkle10,Wrinkle9,Wrinkle8
+        ,Wrinkle7 ,Wrinkle6,Wrinkle5,Wrinkle4,Wrinkle3,Wrinkle2, Wrinkle1,Nostril10,Nostril9,Nostril8,Nostril7,Nostril6,Nostril5,Nostril4,Nostril3,Nostril2,Nostril1} = state;
     const endpoint = BASE_URL + '/submit-survey';
-    console.log(endpoint)
+
     fetch(endpoint, { method: "POST", headers: {
             "Content-Type": "application/json" },
-        body: JSON.stringify({ username,usertype,Muzzle1,Muzzle2,Muzzle3,Muzzle4,Muzzle5,Muzzle6,Wrinkle6,Wrinkle5,Wrinkle4,Wrinkle3,Wrinkle2,
-            Wrinkle1 })
+        body: JSON.stringify({ username,usertype,Muzzle1,Muzzle2,Muzzle3,Muzzle4,Muzzle5,Muzzle6,Muzzle7,Muzzle8,Muzzle9,Muzzle10,Wrinkle10,Wrinkle9,Wrinkle8
+            ,Wrinkle7 ,Wrinkle6,Wrinkle5,Wrinkle4,Wrinkle3,Wrinkle2,
+            Wrinkle1,Nostril10,Nostril9,Nostril8,Nostril7,Nostril6,Nostril5,Nostril4,Nostril3,Nostril2,Nostril1 })
     })
         .then(res => {
             if(res.status === 400){
                 alert("Cannot create this result.");
             }
             else{
-
                 window.location=Font_URL+'/finish';
             }
         });
@@ -431,3 +441,4 @@ export function useSurvey() {
         error
     };
 }
+

@@ -48,7 +48,7 @@ export default class Login extends Component {
                 </Container>
                 <h2><b>Provide Feedback For These Cute Dogs.</b></h2>
                 <h4>Pick up your ideal dog and get the feedback whether it has a health problem</h4>
-                <img src={image} crop="fill" width="85%"/>
+                <img src={image} width="85%" alt={"logo"}/>
                 <h2 className={"coreFeatures"}><b>About</b></h2>
                 <div className={"home-h3"}>
                     <b>Purpose</b>
@@ -94,46 +94,6 @@ export default class Login extends Component {
                         </div>
                     </div>
 
-                </div>
-
-
-
-
-
-
-
-
-
-
-                <div className={"homeRegister"}>
-                    <h2 className={"tryApp"}>Wanna try Animal Shapes? Register today!</h2>
-                    <Form className={"homeform"} onSubmit={(e) => register(e, this)}>
-                        <Form.Group>
-                            <Form.Control id={"Username"} type="text" placeholder="Enter your Username"/>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Control id={"password"} type="password" placeholder="Enter password"/>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Control id={"firstname"} type="text" placeholder="Your Firstname"/>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Control id={"lastname"} type="text" placeholder="Your Lastname"/>
-                        </Form.Group>
-                        <Form.Group>
-                            <select id={"usertype"} className={"usertype3"}>
-                                <option value="" disabled selected>User Type</option>
-                                <option value="Vet">Vet</option>
-                                <option value="Public">Public</option>
-                                <option value="Dog Breeder">Dog Breeder</option>
-
-                            </select>
-
-                        </Form.Group>
-                        <Button className={"register-button"} variant="primary" type="submit">
-                            Get Started
-                        </Button>
-                    </Form>
                 </div>
                 <h2><b>Thank you for choosing Animal Shapes</b></h2>
             </div>

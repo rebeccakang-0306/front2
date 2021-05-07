@@ -9,6 +9,8 @@ export function getID() {
     return sessionStorage.getItem('buyerID');
 }
 
+
+
 export function resetID(){
     sessionStorage.removeItem('buyerID');
 }

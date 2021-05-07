@@ -33,33 +33,40 @@ export default class Login extends Component {
                                 <Image className={"dog-logo"} src={dog} alt={"Logo"} fluid />
                                 <Form className={"home-form"} onSubmit={(e) => register(e, this)}>
                                     <Form.Group>
+                                        <Form.Text style={{display: "flex"}}className="text-muted">
+                                            *Please enter your User Name here
+                                        </Form.Text>
                                         <Form.Control id={"Username"} type="text" placeholder="Enter your Username"/>
                                     </Form.Group>
-                                    <Form.Text style={{display: "flex"}}className="text-muted">
-                                        Please enter your username here.
-                                    </Form.Text>
+
 
                                     <Form.Group>
+                                        <Form.Text style={{display: "flex"}} className="text-muted">
+                                            *Please enter your Password here
+                                        </Form.Text>
                                         <Form.Control id={"password"} type="password" placeholder="Enter password"/>
-                                        <Form.Text style={{display: "flex"}} className="text-muted">
-                                            We'll never share your password with anyone else.
-                                        </Form.Text>
+
                                     </Form.Group>
 
                                     <Form.Group>
+                                        <Form.Text style={{display: "flex"}} className="text-muted">
+                                            Please enter your First Name
+                                        </Form.Text>
                                         <Form.Control id={"firstname"} type="text" placeholder="Your Firstname"/>
-                                        <Form.Text style={{display: "flex"}} className="text-muted">
-                                            Please enter your first name.
-                                        </Form.Text>
+
                                     </Form.Group>
 
                                     <Form.Group>
-                                        <Form.Control id={"lastname"} type="text" placeholder="Your Lastname"/>
                                         <Form.Text style={{display: "flex"}} className="text-muted">
-                                            Please enter your last name.
+                                            Please enter your Last Name
                                         </Form.Text>
+                                        <Form.Control id={"lastname"} type="text" placeholder="Your Lastname"/>
+
                                     </Form.Group>
                                     <Form.Group>
+                                        <Form.Text style={{display: "flex"}} className="text-muted">
+                                            *Please enter your User Type
+                                        </Form.Text>
                                             <select id = {"usertype"} className={"usertype1"} onChange={this.handleSelectChange.bind(this)}>
                                                 <option value="" disabled selected>User Type</option>
                                                 <option value="Vet">Vet</option>
@@ -68,9 +75,7 @@ export default class Login extends Component {
 
                                             </select>
 
-                                        <Form.Text style={{display: "flex"}} className="text-muted">
-                                            Please enter your User Type
-                                        </Form.Text>
+
                                     </Form.Group>
                                     <Button className={"home-button"} variant="primary" type="submit">
                                         Get Started

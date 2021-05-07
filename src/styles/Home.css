@@ -197,6 +197,10 @@ h5 {
     margin-left: 7.5%;
     color:white;
 }
+.hint{
+    font-size: 12px;
+    text-align: left;
+}
 
 .usertype1 {
     width: 350px;
