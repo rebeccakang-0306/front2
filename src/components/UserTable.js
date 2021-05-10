@@ -40,20 +40,27 @@ export class UserTable extends React.Component {
                     <Table className={"user-table"}>
                         <thead>
                         <tr>
-                            <th scope="col">User First Name</th>
-                            <th scope="col">User Last Name</th>
                             <th scope="col">Username</th>
                             <th scope="col">User Type</th>
+                            <th scope="col">User in dog show</th>
+                            <th scope="col">User is dog owner</th>
+                            <th scope="col">User is pug owner</th>
+                            <th scope="col">User works with dog</th>
+
                             <th scope='col'>Update</th>
                         </tr>
                         </thead>
                         <tbody>
                         {users.map(user => {
+
                             return <Tr active key={user._id}>
-                                <td className={"userData"}>{user.firstname}</td>
-                                <td className={"userData"}>{user.lastname}</td>
                                 <td className={"userData"}>{user.username}</td>
                                 <td className={"userData"}>{user.usertype}</td>
+                                <td className={"userData"}>{user.dogShow}</td>
+                                <td className={"userData"}>{user.dogOwner}</td>
+                                <td className={"userData"}>{user.pugOwner}</td>
+                                <td className={"userData"}>{user.workDog}</td>
+
                                 <td className={"userData"}><User key={user._id} {...user} /> </td>
                             </Tr>
                         })}

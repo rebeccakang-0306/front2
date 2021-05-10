@@ -24,8 +24,8 @@ export default class Login extends Component {
         }
         return (
             <div className={"home-body"}>
-                <h1> <b>Check out Digiceipt —— it's free!</b></h1>
-                <h2> Digiceipts helps users to better manage their receipts and spending online</h2>
+                <h1> <b>Check out Animal Shapes —— it's free!</b></h1>
+                <h2> Animal Shapes helps users to gather information about dogs</h2>
                 <Container fluid className={"home-container"}>
                     <Row className={"mx-auto"}>
                         <Col sm={6} className={"home-header"}>
@@ -50,19 +50,35 @@ export default class Login extends Component {
 
                                     <Form.Group>
                                         <Form.Text style={{display: "flex"}} className="text-muted">
-                                            Please enter your First Name
+                                            Whether you participate in competitive dog shows?
                                         </Form.Text>
-                                        <Form.Control id={"firstname"} type="text" placeholder="Your Firstname"/>
+                                        <Form.Control id={"dogShow"} type="text" placeholder="Yes or No"/>
 
                                     </Form.Group>
 
                                     <Form.Group>
                                         <Form.Text style={{display: "flex"}} className="text-muted">
-                                            Please enter your Last Name
+                                            Whether you are a dog owner or not?
                                         </Form.Text>
-                                        <Form.Control id={"lastname"} type="text" placeholder="Your Lastname"/>
+                                        <Form.Control id={"dogOwner"} type="text" placeholder="Yes or No"/>
+                                    </Form.Group>
+
+                                        <Form.Group>
+                                            <Form.Text style={{display: "flex"}} className="text-muted">
+                                                Whether you own a pug or not?
+                                            </Form.Text>
+                                            <Form.Control id={"pugOwner"} type="text" placeholder="Yes or No"/>
 
                                     </Form.Group>
+
+                                    <Form.Group>
+                                        <Form.Text style={{display: "flex"}} className="text-muted">
+                                            Whether you work with a dog?
+                                        </Form.Text>
+                                        <Form.Control id={"workDog"} type="text" placeholder="Yes or No"/>
+
+                                    </Form.Group>
+
                                     <Form.Group>
                                         <Form.Text style={{display: "flex"}} className="text-muted">
                                             *Please enter your User Type

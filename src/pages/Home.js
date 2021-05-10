@@ -38,10 +38,8 @@ export default class Login extends Component {
                 <Container fluid className={"home-container"}>
                     <Row className={"mx-auto"}>
                         <Col sm={6} className={"home-header"}>
-                            <h1 className={"home-h1"}>Convenient Online Animal Diagnosis System</h1>
-                            <h5>Animal Shapes is a tool to understand how different stakeholder groups perceive and
-                                normalise flat-faced dogs, and let the researcher know whether the ideal dog they choose
-                                considered health and cute. </h5>
+                            <h1 className={"home-h1"}>Community Animal Feedback System</h1>
+                            <h5>Animal Shapes seeks to understand what features people consider ideal in dogs. You can help researchers by sharing your thoughts online here.</h5>
                         </Col>
                         <Image className={"dog-logo"} src={dog} alt={"Logo"} fluid/>
                     </Row>
@@ -54,20 +52,14 @@ export default class Login extends Component {
                     <b>Purpose</b>
                 </div>
                 <div className={"features"}>
-                    <h6>The purpose is to explore how much the "ideal" pug face might look the same or different to various groups of people
-                        (e.g. veterinarians, dog breeders, dog owners, not dog owners).
-                        This would be very useful as the extreme body types being selected for as 'cute' have serious health and welfare
-                        impacts for animals, such as not being able to breathe normally.
-                        Given that people make the breeding decisions for these dogs, understanding what "ideal" looks like to different
-                        people can help us understand more about who we need to focus education or regulation efforts toward to improve dog
-                        health and welfare.</h6>
+                    <h6>The purpose of this website is to gather information about which features people consider ideal in dogs. This will vary between different people based on their individual experiences and preferences. Researchers are interested in learning more about what people consider ideal in dogs to help develop evidence-based health and welfare education programs. </h6>
 
                 </div>
                 <div className={"home-h3"}>
                     <b>Method</b>
                 </div>
                 <div className={"features"}>
-                    <h6>This webpage collects the views of various groups of people for different dog pictures through surveys to find out which dog pictures are the perfect dogs.</h6>
+                    <h6>This website will ask you to rate some dog pictures based on what you consider to be ideal. It will also ask a little bit about you in terms of your experience to allow for data analysis. Your participation in this project is anonymous and your responses will not be able to be indentified after you have participated, and will only be analysed at the group level. If you have any questions or concerns about this project, you can email the research team at: yinank@unimelb.edu.au.</h6>
 
                 </div>
 

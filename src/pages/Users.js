@@ -47,11 +47,13 @@ export function User(user) {
 
 
 export function UserExtend(props) {
-    const { _id, firstname, lastname, username, password, usertype, showUpdate } = props;
+    const { _id, dogShow, dogOwner, pugOwner, workDog, username,password, usertype, showUpdate } = props;
 
     const [id_input, setId] = useState(_id);
-    const [first_input, setFirstName] = useState(firstname);
-    const [last_input, setLastName] = useState(lastname);
+    const [show_input, setDogShow] = useState(dogShow);
+    const [owner_input, setDogOwner] = useState(dogOwner);
+    const [pug_input, setPugOwner] = useState(pugOwner);
+    const [work_input, setWorkDog] = useState(workDog);
     const [username_input, setUsername] = useState(username);
     const [password_input, setPassword] = useState(password);
     /* 1 */
@@ -62,8 +64,10 @@ export function UserExtend(props) {
         //call update author function
         updateUser({
             _id: id_input,
-            firstname: first_input,
-            lastname: last_input,
+            dogShow: show_input,
+            dogOwner: owner_input,
+            pugOwner: pug_input,
+            workDog: work_input,
             username: username_input,
             password:password_input,
             usertype:usertype_input
@@ -74,8 +78,12 @@ export function UserExtend(props) {
         <div className={`author-expand ${showUpdate ? "show" : ""}`}>
             <form className={'update-form'}>
                 {/* TODO - add value and onChange properties to inputs */}
-                <input type="text" name="first_name" value = {first_input} onChange={event => {setFirstName(event.target.value);}}/>
-                <input type="text" name="last_name" value = {last_input} onChange={event => { setLastName(event.target.value);}}/>
+                <input type="text" name="dog_show" value = {show_input} onChange={event => {setDogShow(event.target.value);}}/>
+                <input type="text" name="dog_owner" value = {owner_input} onChange={event => { setDogOwner(event.target.value);}}/>
+                <input type="text" name="pug_owner" value = {pug_input} onChange={event => { setPugOwner(event.target.value);}}/>
+
+                <input type="text" name="work_dog" value = {work_input} onChange={event => { setWorkDog(event.target.value);}}/>
+
                 <input type="text" name="username" value = {username_input} onChange={event => { setUsername(event.target.value);}}/>
                 <select className={"usertype5"} name = "user_type" value = {usertype_input} onChange={event => { setUserType(event.target.value);}}>
                     <option value="Vet">Vet</option>

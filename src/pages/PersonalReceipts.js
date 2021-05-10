@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '@material-ui/core/Button';
+import  "../styles/NewNav.css"
 import {updateUser} from "../api";
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,7 +11,7 @@ import {useUsers, deleteUser, createSurvey} from "../api.js";
 
 import Adduser from "../components/Adduser";
 
-import '../styles/Users.css';
+import '../styles/Home.css';
 import {UserTable} from "../components/UserTable";
 import {getID, getUsername, getUsertype} from "../components/CurrentUser";
 import Image from "react-bootstrap/Image";
@@ -65,61 +66,61 @@ function getNumNoRepeat() {
             var num = Math.floor(Math.random() * 10) + 1;
                   if (-1 === arr.indexOf(num)) {//数组中不存在
                 if (num === 1) {
-                    img = "/static/media/" + "dog" + num + ".a0d2b6e6.jpg";
+                    img = "/static/media/" + "dog" + num + ".9f8c8ea7.jpg";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 2) {
-                    img = "/static/media/" + "dog" + num + ".00163a78.png";
+                    img = "/static/media/" + "dog" + num + ".e28ac6e3.png";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 3) {
-                    img = "/static/media/" + "dog" + num + ".0ee148d4.png";
+                    img = "/static/media/" + "dog" + num + ".3e9f3f5e.png";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 4) {
-                    img = "/static/media/" + "dog" + num + ".4f1451c3.png";
+                    img = "/static/media/" + "dog" + num + ".3723ec8f.png";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 5) {
-                    img = "/static/media/" + "dog" + num + ".5a23df4f.png";
+                    img = "/static/media/" + "dog" + num + ".57ce048e.png";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 6) {
-                    img = "/static/media/" + "dog" + num + ".ddfcf4ad.png";
+                    img = "/static/media/" + "dog" + num + ".ba65919b.png";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 7) {
-                    img = "/static/media/" + "dog" + num + ".487fc08e.png";
+                    img = "/static/media/" + "dog" + num + ".983c3440.png";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 8) {
-                    img = "/static/media/" + "dog" + num + ".5265380f.png";
+                    img = "/static/media/" + "dog" + num + ".2748f7db.png";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 9) {
-                    img = "/static/media/" + "dog" + num + ".4a6a0d2f.png";
+                    img = "/static/media/" + "dog" + num + ".862a0f5c.png";
                     picture.push(img)
 
                     arr.push(num);
                 }
                 else if (num === 10) {
-                    img = "/static/media/" + "dog" + num + ".cf259234.png";
+                    img = "/static/media/" + "dog" + num + ".cb45900d.png";
                     picture.push(img)
 
                     arr.push(num);
@@ -159,61 +160,61 @@ function getNumNoRepeat1() {
             var num1 = Math.floor(Math.random() * 10) + 1;
             if (!arr1.includes(num1)) {//数组中不存在
                 if (num1 === 1) {
-                    img1 = "/static/media/" + "d" + num1 + ".33ceb103.png";
+                    img1 = "/static/media/" + "d" + num1 + ".c1178f21.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 2) {
-                    img1= "/static/media/" + "d" + num1 + ".8e4e09e1.png";
+                    img1= "/static/media/" + "d" + num1 + ".d3402512.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 3) {
-                    img1 = "/static/media/" + "d" + num1 + ".fe004772.png";
+                    img1 = "/static/media/" + "d" + num1 + ".a211c85a.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 4) {
-                    img1 = "/static/media/" + "d" + num1 + ".789a71cb.png";
+                    img1 = "/static/media/" + "d" + num1 + ".b36b4518.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 5) {
-                    img1 = "/static/media/" + "d" + num1 + ".146e43c6.png";
+                    img1 = "/static/media/" + "d" + num1 + ".42328ce4.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 6) {
-                    img1 = "/static/media/" + "d" + num1 + ".4cf56f81.png";
+                    img1 = "/static/media/" + "d" + num1 + ".26f3f651.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 7) {
-                    img1 = "/static/media/" + "d" + num1 + ".63153671.png";
+                    img1 = "/static/media/" + "d" + num1 + ".d3204083.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 8) {
-                    img1 = "/static/media/" + "d" + num1 + ".6c16eba7.png";
+                    img1 = "/static/media/" + "d" + num1 + ".f859895d.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 9) {
-                    img1 = "/static/media/" + "d" + num1 + ".8977ee92.png";
+                    img1 = "/static/media/" + "d" + num1 + ".90a14811.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
                 }
                 else if (num1 === 10) {
-                    img1 = "/static/media/" + "d" + num1 + ".861acf9f.png";
+                    img1 = "/static/media/" + "d" + num1 + ".19c6ff1b.png";
                     picture1.push(img1)
 
                     arr1.push(num1);
@@ -255,60 +256,60 @@ function getNumNoRepeat2() {
             var num2 = Math.floor(Math.random() * 10) + 1;
             if (!arr2.includes(num2)) {//数组中不存在
                 if (num2 === 1) {
-                    img2 = "/static/media/" + "do" + num2+ ".69a1be56.png";
+                    img2 = "/static/media/" + "do" + num2+ ".0a46b828.png";
                     picture2.push(img2)
                     arr2.push(num2);
                 }
                 else if (num2 === 2) {
-                    img2= "/static/media/" + "do" + num2 + ".a012e148.png";
+                    img2= "/static/media/" + "do" + num2 + ".cb9fc5b4.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
                 }
                 else if (num2 === 3) {
-                    img2 = "/static/media/" + "do" + num2 + ".82564b54.png";
+                    img2 = "/static/media/" + "do" + num2 + ".62a63df1.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
                 }
                 else if (num2 === 4) {
-                    img2 = "/static/media/" + "do" + num2 + ".fc0ca8b3.png";
+                    img2 = "/static/media/" + "do" + num2 + ".569f1413.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
                 }
                 else if (num2 === 5) {
-                    img2 = "/static/media/" + "do" + num2 + ".ca5350f8.png";
+                    img2 = "/static/media/" + "do" + num2 + ".715d0f74.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
                 }
                 else if (num2 === 6) {
-                    img2 = "/static/media/" + "do" + num2 + ".bb0b650a.png";
+                    img2 = "/static/media/" + "do" + num2 + ".4672e013.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
                 }
                 else if (num2 === 7) {
-                    img2 = "/static/media/" + "do" + num2 + ".7eb76e8e.png";
+                    img2 = "/static/media/" + "do" + num2 + ".37e14488.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
                 }
                 else if (num2 === 8) {
-                    img2 = "/static/media/" + "do" + num2 + ".25d5203a.png";
+                    img2 = "/static/media/" + "do" + num2 + ".05e7e3e1.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
                 }
                 else if (num2 === 9) {
-                    img2 = "/static/media/" + "do" + num2 + ".ab330674.png";
+                    img2 = "/static/media/" + "do" + num2 + ".2545ff5a.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
                 }
                 else if (num2 === 10) {
-                    img2 = "/static/media/" + "do" + num2 + ".23d8a32f.png";
+                    img2 = "/static/media/" + "do" + num2 + ".21304fdf.png";
                     picture2.push(img2)
 
                     arr2.push(num2);
@@ -414,7 +415,6 @@ const labels = {
 
 const useStyles = makeStyles({
     root: {
-        display: 'flex',
         alignItems: 'center',
     },
 });
@@ -491,16 +491,16 @@ export default function HoverRating() {
         <div className={classes.root}>
             <div className={"pics6"}>
                 <h1>Survey</h1>
-                <div className={"title"}><b>What do you think is the ideal muzzle length for a pug?</b></div>
+
                 <div id="status3_pics">
                     <ul className={"pics6_status3"}>
                         <li>
-                             <div className={"small"}>Muzzle Length {order[0]}</div>
+
 
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
                                    src =  {dog1} />
-                               <div className={"small"}>How much you like the dog?</div>
+                               <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback"
                                 value={value}
@@ -516,11 +516,11 @@ export default function HoverRating() {
                                 {value !== null && <Box id= 'box1' ml={2}>{labels[hover !== -1 ? hover : value]}</Box>}
                         </li>
                         <li>
-                             <div className={"small"}>Muzzle Length: {order[1]} </div>
+
                             <Image id="1" className="status3-pic" //height="400" width="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
                                    src = {dog2}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback1"
                                 value={value0}
@@ -536,11 +536,11 @@ export default function HoverRating() {
                         </li>
 
                         <li>
-                             <div className={"small"}>Muzzle Length: {order[2]}</div>
+
                             <img id="2" className="status3-pic" height="400"
                                  //src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1541213992,76400213&fm=26&gp=0.jpg"/>
                                  src = {dog3}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                                 <Rating
                                     name="hover-feedback2"
                                     value={value1}
@@ -556,12 +556,12 @@ export default function HoverRating() {
                         </li>
 
                         <li>
-                             <div className={"small"}>Muzzle Length: {order[3]}</div>
+
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog4}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback3"
                                 value={value2}
@@ -576,11 +576,11 @@ export default function HoverRating() {
                             {value2 !== null && <Box id= 'box1' ml={2}>{labels[hover2 !== -1 ? hover2 : value2]}</Box>}
                         </li>
                         <li>
-                             <div className={"small"}>Muzzle Length: {order[4]}</div>
+
                             <img id="3" className="status3-pic" height="400"
                                  //src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1867263544,2857916448&fm=26&gp=0.jpg"/>
                                  src = {dog5}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback4"
                                 value={value3}
@@ -595,12 +595,12 @@ export default function HoverRating() {
                             {value3 !== null && <Box ml={2}>{labels[hover3 !== -1 ? hover3 : value3]}</Box>}
                         </li>
                         <li>
-                             <div className={"small"}>Muzzle Length: {order[5]}</div>
+
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {dog6}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback5"
                                 value={value4}
@@ -619,15 +619,14 @@ export default function HoverRating() {
 
                     </ul>
                 </div>
-                <div className={"title"}><b>What do you think is the ideal amount of wrinkles for a pug?</b></div>
                 <div id="status3_pics">
                     <ul className="pics6_status3">
                         <li>
-                              <div className={"small"}>Amount of wrinkles: {11-order1[0]}</div>
+
                             <img id="4" className="status3-pic" height="400"
                                  //src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2219225502,1868692565&fm=26&gp=0.jpg"/>
                                  src = {d1}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback6"
                                 value={value5}
@@ -642,12 +641,12 @@ export default function HoverRating() {
                             {value5 !== null && <Box id= 'box1' ml={2}>{labels[hover5 !== -1 ? hover5 : value5]}</Box>}
                         </li>
                         <li>
-                              <div className={"small"}>Amount of wrinkles: {11-order1[1]}</div>
+
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {d2}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback7"
                                 value={value6}
@@ -665,11 +664,11 @@ export default function HoverRating() {
 
                         <li>
 
-                              <div className={"small"}>Amount of wrinkles: {11-order1[2]}</div>
+
                             <img id="5" className="status3-pic" height="400"
                                  //src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=979862297,3441058921&fm=26&gp=0.jpg"/>
                             src = {d3}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
 
 
                             <Rating
@@ -686,12 +685,12 @@ export default function HoverRating() {
                             {value7 !== null && <Box ml={2}>{labels[hover7 !== -1 ? hover7 : value7]}</Box>}
                         </li>
                         <li>
-                              <div className={"small"}>Amount of wrinkles: {11-order1[3]}</div>
+
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {d4}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback9"
                                 value={value8}
@@ -711,12 +710,12 @@ export default function HoverRating() {
 
                         <li>
 
-                              <div className={"small"}>Amount of wrinkles: {11-order1[4]}</div>
+
 
                             <img id="6" className="status3-pic" height="400"
                                  //src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3477240067,1549523397&fm=26&gp=0.jpg"/>
                                  src = {d5}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
 
 
                             <Rating
@@ -733,12 +732,12 @@ export default function HoverRating() {
                             {value9 !== null && <Box ml={2}>{labels[hover9 !== -1 ? hover9 : value9]}</Box>}
                         </li>
                         <li>
-                              <div className={"small"}>Amount of wrinkles: {11-order1[5]}</div>
+
                             <Image id="1" className="status3-pic" height="400"
                                 // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                    src = {d6}/>
-                            <div className={"small"}>How much you like the dog?</div>
+                            <div className={"small"}>How ideal do you think this dog?</div>
                             <Rating
                                 name="hover-feedback11"
                                 value={value10}
@@ -757,14 +756,13 @@ export default function HoverRating() {
                 </div>
 
            <div id="status3_pics">
-               <div className={"title"}><b>What do you think is the ideal wide of nostrils for a pug?</b></div>
-                            <ul className="pics6_status3">
+                <ul className="pics6_status3">
                                 <li>
-                                    <div className={"small"}>Wide of nostrils: {11-order2[0]}</div>
+
                                     <img id="7" className="status3-pic" height="400"
                                         // src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=916075890,1662056472&fm=11&gp=0.jpg"/>
                                          src = {do1}/>
-                                    <div className={"small"}>How much you like the dog?</div>
+                                    <div className={"small"}>How ideal do you think this dog?</div>
 
                                     <Rating
                                         name="hover-feedback12"
@@ -781,12 +779,12 @@ export default function HoverRating() {
                                 </li>
 
                                 <li>
-                                    <div className={"small"}>Wide of nostrils: {11-order2[1]}</div>
+
                                     <Image id="1" className="status3-pic" height="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                            src = {do2}/>
-                                    <div className={"small"}>How much you like the dog?</div>
+                                    <div className={"small"}>How ideal do you think this dog?</div>
                                     <Rating
                                         name="hover-feedback13"
                                         value={value12}
@@ -805,11 +803,11 @@ export default function HoverRating() {
 
 
                                 <li>
-                                    <div className={"small"}>Wide of nostrils: {11-order2[2]}</div>
+
                                     <img id="8" className="status3-pic" height="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2870177897,1063334582&fm=26&gp=0.jpg"/>
                                          src = {do3}/>
-                                    <div className={"small"}>How much you like the dog?</div>
+                                    <div className={"small"}>How ideal do you think this dog?</div>
 
 
                                     <Rating
@@ -826,11 +824,11 @@ export default function HoverRating() {
                                     {value13 !== null && <Box ml={2}>{labels[hover13 !== -1 ? hover13 : value13]}</Box>}
                                 </li>
                                 <li>
-                                    <div className={"small"}>Wide of nostrils: {11-order2[3]}</div>
+
                                     <Image id="1" className="status3-pic" height="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
                                            src = {do4}/>
-                                    <div className={"small"}>How much you like the dog?</div>
+                                    <div className={"small"}>How ideal do you think this dog?</div>
                                     <Rating
                                         name="hover-feedback15"
                                         value={value14}
@@ -849,11 +847,11 @@ export default function HoverRating() {
 
 
                                 <li>
-                                    <div className={"small"}>Wide of nostrils: {11-order2[4]}</div>
+
                                     <img id="9" className="status3-pic" height="400"
                                          //src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1911301903,2982696630&fm=26&gp=0.jpg"/>
                                          src = {do5}/>
-                                    <div className={"small"}>How much you like the dog?</div>
+                                    <div className={"small"}>How ideal do you think this dog?</div>
 
 
                                     <Rating
@@ -870,12 +868,12 @@ export default function HoverRating() {
                                     {value15 !== null && <Box ml={2}>{labels[hover15 !== -1 ? hover15 : value15]}</Box>}
                                 </li>
                                 <li>
-                                    <div className={"small"}>Wide of nostrils: {11-order2[5]}</div>
+
                                     <Image id="1" className="status3-pic" height="400"
                                         // src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1377867411,289768012&fm=26&gp=0.jpg"/>
 
                                            src = {do6}/>
-                                    <div className={"small"}>How much you like the dog?</div>
+                                    <div className={"small"}>How ideal do you think this dog?</div>
                                     <Rating
                                         name="hover-feedback17"
                                         value={value16}

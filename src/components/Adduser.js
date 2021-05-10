@@ -6,16 +6,20 @@ import Button from "../components/Button";
 export default function Adduser() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const [firstname, setFirstName] = useState("");
-    const [lastname, setLastName] = useState("");
+    const [dogShow, setDogShow] = useState("");
+    const [dogOwner, setDogOwner] = useState("");
+    const [pugOwner, setPugOwner] = useState("");
+    const [workDog, setWorkDog] = useState("");
     const [usertype, setUserType] = useState("");
 
     function onSubmit() {
         addUser({
           username,
           password,
-          firstname,
-          lastname,
+          dogShow,
+          dogOwner,
+            pugOwner,
+            workDog,
             usertype
         });
     }
@@ -47,21 +51,41 @@ export default function Adduser() {
                 <input
                     className="input1"
                     type="text"
-                    placeholder="First Name"
-                    name="firstname"
-                    value={firstname}
+                    placeholder="Whether you participate in dog competition"
+                    name="dogshow"
+                    value={dogShow}
                     onChange={event => {
-                      setFirstName(event.target.value);
+                      setDogShow(event.target.value);
                     }}
                 />
                 <input
                     className="input1"
                     type="text"
-                    placeholder="Last Name"
-                    name="lastname"
-                    value={lastname}
+                    placeholder="Whether you own a dog"
+                    name="dogowner"
+                    value={dogOwner}
                     onChange={event => {
-                      setLastName(event.target.value);
+                      setDogOwner(event.target.value);
+                    }}
+                />
+                <input
+                    className="input1"
+                    type="text"
+                    placeholder="Whether you own a pug"
+                    name="pugowner"
+                    value={dogOwner}
+                    onChange={event => {
+                        setPugOwner(event.target.value);
+                    }}
+                />
+                <input
+                    className="input1"
+                    type="text"
+                    placeholder="Whether you work with dog"
+                    name="workdog"
+                    value={dogOwner}
+                    onChange={event => {
+                        setWorkDog(event.target.value);
                     }}
                 />
 

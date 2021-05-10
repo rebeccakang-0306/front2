@@ -10,6 +10,7 @@ import {setUsername, setID, getID, Userlogin,setUsertype} from "./components/Cur
  //const BASE_URL = "https://animal-shape-project.herokuapp.com";
 const BASE_URL = "http://localhost:8000";
 const Font_URL = "http://localhost:3000";
+//const Font_URL = "https://animal-shape-front.herokuapp.com/";
 
 
 export function getUsers() {
@@ -32,8 +33,8 @@ export function getCertainUser(id) {
 
 
 export function addUser(user) {
-    const { username, password, firstname, lastname, usertype } = user;
-    if (!username || !password || !firstname || !lastname || !usertype) {
+    const { username, password, dogShow, dogOwner, pugOwner,workDog } = user;
+    if (!username || !password || !dogShow || !dogOwner || !pugOwner ||! workDog) {
         alert("must include all fields");
         return;
     }
@@ -45,9 +46,10 @@ export function addUser(user) {
         body: JSON.stringify({
             username,
             password,
-            firstname,
-            lastname,
-            usertype})
+            dogShow,
+            dogOwner,
+            pugOwner,
+        workDog})
     })
         .then(res => {
             if(res.status === 400){
@@ -63,8 +65,10 @@ export function register(e, lg) {
     e.preventDefault();
     const username = document.getElementById('Username').value;
     const password = document.getElementById('password').value;
-    const firstname = document.getElementById('firstname').value;
-    const lastname = document.getElementById('lastname').value;
+    const dogShow = document.getElementById('dogShow').value;
+    const dogOwner = document.getElementById('dogOwner').value;
+    const pugOwner = document.getElementById('pugOwner').value;
+    const workDog = document.getElementById('workDog').value;
     const usertype = document.getElementById('usertype').value;
 if (!username || !usertype || !password) {
         alert("Must include required fields");
@@ -79,9 +83,10 @@ if (!username || !usertype || !password) {
     let request = {
         username: username,
         password: password,
-        firstname: firstname,
-        lastname: lastname,
-        /* 1 */
+        dogShow: dogShow,
+        dogOwner: dogOwner,
+        pugOwner:pugOwner,
+        workDog:workDog,
         usertype: usertype
     };
 
@@ -151,13 +156,13 @@ export function login(e, lg) {
 }
 
 export function updateUser(user) {
-    const { _id, firstname, lastname, username, password, usertype } = user;
+    const { _id, dogShow, dogOwner,pugOwner,workDog, username, password, usertype } = user;
     if (!_id) {
         alert("must include an id");
         return;
     }
-    if (!firstname || !lastname) {
-        alert("must include a first name or last name to update");
+    if (!dogOwner || !dogShow || !pugOwner ||workDog) {
+        alert("must include a dogOwner, dog Show,pugOwner or workDog to update");
         return;
     }
     if (!username || !password) {
@@ -171,8 +176,10 @@ export function updateUser(user) {
     return fetch(endpoint, { method: "POST", headers: {
             "Content-Type": "application/json" },
         body: JSON.stringify({ _id,
-            firstname,
-            lastname,
+            dogShow,
+            dogOwner,
+            pugOwner,
+            workDog,
             username,
             password,
         usertype})

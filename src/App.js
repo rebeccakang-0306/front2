@@ -45,7 +45,6 @@ export default function App(){
                         <MonthlySpending />
                     </Route>}
                     {<Route path = "/personalpage">
-                        <UserpageNav />
                         <UserPage />
                     </Route>}
                     {<Route path = "/finish">
