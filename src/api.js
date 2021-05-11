@@ -411,7 +411,7 @@ export function createSurvey(state) {
                 alert("Cannot create this result.");
             }
             else{
-                window.location=Font_URL+'/finish';
+                window.location=Font_URL+'finish';
             }
         });
 }
