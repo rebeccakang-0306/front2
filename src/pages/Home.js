@@ -45,7 +45,7 @@ export default class Login extends Component {
                     </Row>
                 </Container>
                 <h2><b>Provide Feedback For These Cute Dogs.</b></h2>
-                <h4>Pick up your ideal dog and get the feedback whether it has a health problem</h4>
+          
                 <img src={image} width="85%" alt={"logo"}/>
                 <h2 className={"coreFeatures"}><b>About</b></h2>
                 <div className={"home-h3"}>
