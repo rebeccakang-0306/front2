@@ -87,9 +87,84 @@ export default class Login extends Component {
                     </div>
 
                 </div>
+                
+            <div>
+                    <h2  className={"coreFeatures"}>Wanna try Animal Shapes? Register today!</h2>
+                    <Form className={"home-form"} onSubmit={(e) => register(e, this)}>
+                        <Form.Group>
+                            <Form.Text style={{display: "flex"}}className="text-muted">
+                                *Please enter your User Name here
+                            </Form.Text>
+                            <Form.Control id={"Username"} type="text" placeholder="Enter your Username"/>
+                        </Form.Group>
+
+
+                        <Form.Group>
+                            <Form.Text style={{display: "flex"}} className="text-muted">
+                                *Please enter your Password here
+                            </Form.Text>
+                            <Form.Control id={"password"} type="password" placeholder="Enter password"/>
+
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.Text style={{display: "flex"}} className="text-muted">
+                                Whether you participate in competitive dog shows?
+                            </Form.Text>
+                            <Form.Control id={"dogShow"} type="text" placeholder="Yes or No"/>
+
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.Text style={{display: "flex"}} className="text-muted">
+                                Whether you are a dog owner or not?
+                            </Form.Text>
+                            <Form.Control id={"dogOwner"} type="text" placeholder="Yes or No"/>
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.Text style={{display: "flex"}} className="text-muted">
+                                Whether you own a pug or not?
+                            </Form.Text>
+                            <Form.Control id={"pugOwner"} type="text" placeholder="Yes or No"/>
+
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.Text style={{display: "flex"}} className="text-muted">
+                                Whether you work with a dog?
+                            </Form.Text>
+                            <Form.Control id={"workDog"} type="text" placeholder="Yes or No"/>
+
+                        </Form.Group>
+
+                        <Form.Group>
+                            <Form.Text style={{display: "flex"}} className="text-muted">
+                                *Please enter your User Type
+                            </Form.Text>
+                            <select id = {"usertype"} className={"usertype1"} onChange={this.handleSelectChange.bind(this)}>
+                                <option value="" disabled selected>User Type</option>
+                                <option value="Vet">Vet</option>
+                                <option value="Public">Public</option>
+                                <option value="Dog Breeder">Dog Breeder</option>
+
+                            </select>
+                        </Form.Group>
+                        <Button className={"register-button"} variant="primary" type="submit">
+                            Register Now
+                        </Button>
+                    </Form>
+                </div>
                 <h2><b>Thank you for choosing Animal Shapes</b></h2>
             </div>
+
         );
+    }
+    handleSelectChange(e){
+        let val = e.target.value
+        this.setState({
+            userType:val
+        })
     }
 }
 
