@@ -159,7 +159,7 @@ export default class Login extends Component {
         );
     }
     handleSelectChange(e){
-        let val = e.target.value
+        var val = e.target.value
         this.setState({
             userType:val
         })
