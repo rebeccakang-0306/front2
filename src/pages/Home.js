@@ -62,33 +62,7 @@ export default class Login extends Component {
                     <h6>This website will ask you to rate some dog pictures based on what you consider to be ideal. It will also ask a little bit about you in terms of your experience to allow for data analysis. Your participation in this project is anonymous and your responses will not be able to be indentified after you have participated, and will only be analysed at the group level. If you have any questions or concerns about this project, you can email the research team at: yinank@unimelb.edu.au.</h6>
 
                 </div>
-
-
-                <div className={"home-h3"}>
-                    <h2 className={"coreFeatures"}><b>Guideline</b></h2>
-                    <div className="pics5">
-                        <div id="status3_pics">
-                            <ul className="pics6_status3">
-
-                                <li>
-                                    <Image className="status3-pic" src={reg} alt={"Logo"}/>
-                                    <div><b>Step 1: Register</b></div>
-                                </li>
-                                <li>
-                                    <Image className="status3-pic" src={login} alt={"Logo"}/>
-                                    <div><b>Step 2: Log In</b></div>
-                                </li>
-                                <li>
-                                    <Image crop="fill" width="85%" src={survey}/>
-                                    <div><b>Step 3: Survey</b></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                
-            <div>
+         <div>
                     <h2  className={"coreFeatures"}>Wanna try Animal Shapes? Register today!</h2>
                     <Form className={"home-form"} onSubmit={(e) => register(e, this)}>
                         <Form.Group>
@@ -155,8 +129,36 @@ export default class Login extends Component {
                         </Button>
                     </Form>
                 </div>
-                <h2><b>Thank you for choosing Animal Shapes</b></h2>
-            </div>
+              
+    
+
+
+                <div className={"home-h3"}>
+                    <h2 className={"coreFeatures"}><b>Guideline</b></h2>
+                    <div className="pics5">
+                        <div id="status3_pics">
+                            <ul className="pics6_status3">
+
+                                <li>
+                                    <Image className="status3-pic" src={reg} alt={"Logo"}/>
+                                    <div><b>Step 1: Register</b></div>
+                                </li>
+                                <li>
+                                    <Image className="status3-pic" src={login} alt={"Logo"}/>
+                                    <div><b>Step 2: Log In</b></div>
+                                </li>
+                                <li>
+                                    <Image crop="fill" width="85%" src={survey}/>
+                                    <div><b>Step 3: Survey</b></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+  <h2><b>Thank you for choosing Animal Shapes</b></h2>
+
+                </div>
+                
+          
 
         );
     }
