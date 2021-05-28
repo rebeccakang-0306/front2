@@ -115,7 +115,7 @@ export default class Login extends Component {
                             <Form.Text style={{display: "flex"}} className="text-muted">
                                 *Please enter your User Type
                             </Form.Text>
-                            <select id = {"usertype"} className={"usertype1"} onChange={this.handleSelectChange.bind(this)}>
+                            <select id = {"usertype"} className={"usertype1"}>
                                 <option value="" disabled selected>User Type</option>
                                 <option value="Vet">Vet</option>
                                 <option value="Public">Public</option>
@@ -157,12 +157,6 @@ export default class Login extends Component {
                 </div>
 
         );
-    }
-    handleSelectChange(e){
-        let val = e.target.value
-        this.setState({
-            userType:val
-        })
     }
 }
 
