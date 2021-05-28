@@ -61,7 +61,7 @@ export default class Login extends Component {
                 <div className={"features"}>
                     <h6>This website will ask you to rate some dog pictures based on what you consider to be ideal. It will also ask a little bit about you in terms of your experience to allow for data analysis. Your participation in this project is anonymous and your responses will not be able to be indentified after you have participated, and will only be analysed at the group level. If you have any questions or concerns about this project, you can email the research team at: yinank@unimelb.edu.au.</h6>
                 </div>
-                <div>
+               <div>
                     <h2  className={"coreFeatures"}>Wanna try Animal Shapes? Register today!</h2>
                     <Form className={"home-form"} onSubmit={(e) => register(e, this)}>
                         <Form.Group>
@@ -115,7 +115,7 @@ export default class Login extends Component {
                             <Form.Text style={{display: "flex"}} className="text-muted">
                                 *Please enter your User Type
                             </Form.Text>
-                            <select id = {"usertype"} className={"usertype1"}>
+                            <select id = {"usertype"} className={"usertype1"} onChange={this.handleSelectChange.bind(this)}>
                                 <option value="" disabled selected>User Type</option>
                                 <option value="Vet">Vet</option>
                                 <option value="Public">Public</option>
@@ -128,8 +128,7 @@ export default class Login extends Component {
                         </Button>
                     </Form>
                 </div>
-              
-    
+
 
 
                 <div className={"home-h3"}>
@@ -153,10 +152,13 @@ export default class Login extends Component {
                             </ul>
                         </div>
                     </div>
-                    <h2><b>Thank you for choosing Animal Shapes</b></h2>
+
                 </div>
+                <h2><b>Thank you for choosing Animal Shapes</b></h2>
+            </div>
 
         );
     }
+
 }
 
